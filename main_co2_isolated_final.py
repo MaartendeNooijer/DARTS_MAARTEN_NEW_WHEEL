@@ -961,8 +961,8 @@ if __name__ == '__main__':
 
     cases_list = []
     cases_list += ['grid_CCS_maarten']
-    # cases_list += ['fault=FM1_cut=CO1_grid=G1_top=TS2_mod=OBJ_mult=1'] #This one does converge
-    #cases_list += ['fault=FM1_cut=CO1_grid=G1_top=TS2_mod=OBJ_mult=2'] #This one does not converge
+    #cases_list += ['fault=FM1_cut=CO1_grid=G1_top=TS1_mod=OBJ_mult=1'] #This one does converge
+    #cases_list += ['fault=FM1_cut=CO1_grid=G1_top=TS2_mod=PIX_mult=2'] #This one does not converge
     cases_list = [(i, case) for i, case in enumerate(cases_list)]
 
     well_controls = []
