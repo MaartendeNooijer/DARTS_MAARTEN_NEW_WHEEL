@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 # from darts.models.darts_model import DartsModel
 from darts_model import DartsModel
-from darts.tools.flux_tools import get_wells_components_molar_rates, get_wells_phases_volumetric_rates
+#from darts.tools.flux_tools import get_wells_components_molar_rates, get_wells_phases_volumetric_rates
 
 # from darts.models.darts_model import DartsModel
 

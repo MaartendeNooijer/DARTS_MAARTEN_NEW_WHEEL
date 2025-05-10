@@ -6,7 +6,8 @@ from matplotlib.lines import Line2D
 
 # --- USER SETTINGS ---
 
-case_folder = "./results/results_ccs_grid_CCS_maarten_wbhp_000MS_Check"
+#case_folder = "./results/results_ccs_grid_CCS_maarten_wbhp_000MS_Check"
+case_folder = "./results/rate"
 #case_folder = "./results/results_ccs_fault=FM1_cut=CO1_grid=G1_top=TS1_mod=OBJ_mult=1_wbhp_000MS_Check"
 #case_folder = "./results/results_ccs_fault=FM1_cut=CO1_grid=G1_top=TS2_mod=PIX_mult=2_wbhp_000MS_Check"
 

@@ -1,4 +1,4 @@
-# from darts.reservoirs.cpg_reservoir import CPG_Reservoir, save_array, read_arrays, check_arrays, make_burden_layers, make_full_cube
+#from darts.reservoirs.cpg_reservoir import CPG_Reservoir, save_array, read_arrays, check_arrays, make_burden_layers, make_full_cube
 
 from cpg_reservoir import CPG_Reservoir, save_array, read_arrays, check_arrays, make_burden_layers, make_full_cube
 
@@ -7,8 +7,8 @@ from darts.engines import value_vector
 
 from darts.tools.gen_cpg_grid import gen_cpg_grid
 
-# from darts.models.cicd_model import CICDModel
-from cicd_model import CICDModel
+from darts.models.cicd_model import CICDModel
+#from cicd_model import CICDModel
 from darts.engines import value_vector, index_vector
 
 import numpy as np
@@ -135,6 +135,7 @@ class Model_CPG(CICDModel):
         # self.ijk_to_track = [
         #             # FM1 TS1
         #             (75, 108, 17), (75, 108, 39), (75, 108, 62),
+        #
         #             (75, 109, 2), (75, 109, 24), (75, 109, 47),
         #
         #             # FM1 TS2
@@ -202,7 +203,8 @@ class Model_CPG(CICDModel):
                     self.well_cells.append(perf_ijk_new)  # NEW, for RHS function
                     self.reservoir.add_perforation(wname,
                                                    cell_index=perf_ijk_new,
-                                                   well_index=perf.well_index, well_indexD=perf.well_indexD,
+                                                   # well_index=perf.well_index, well_indexD=perf.well_indexD, #Original
+                                                   well_index=perf.well_index, well_indexD=0, #NEW
                                                    multi_segment=True, verbose=True)
                     #    multi_segment=True, verbose=True)
         else:
@@ -235,7 +237,7 @@ class Model_CPG(CICDModel):
         # self.reservoir.save_grdecl(self.get_arrays_gredcl(ith_step), os.path.join(out_dir, 'res_' + str(ith_step+1)))
         self.physics.engine.report()
 
-        print("[Tracker] Entered do_after_step, time =", self.physics.engine.time_data['time'][-1])
+        #print("[Tracker] Entered do_after_step, time =", self.physics.engine.time_data['time'][-1])
         total_pressure = self.physics.engine.X[::3]
         average_pressure = np.mean(total_pressure)
 

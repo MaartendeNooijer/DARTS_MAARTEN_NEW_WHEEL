@@ -63,6 +63,7 @@ class Tee:
 
 def run_simulation_main(model, out_dir="."):
     time_simulated = 0.0
+    model.do_after_step()
     for ith_step, dt in enumerate(model.idata.sim.time_steps):
         model.set_well_controls(time=time_simulated)
         success = run_main(model, days=dt, out_dir=out_dir)
@@ -73,17 +74,19 @@ def run_simulation_main(model, out_dir="."):
         time_simulated += dt
     return True
 
+def run_simulation_main_new(model, out_dir="."):
 
-def run_simulation_ini(model, out_dir="."):
     time_simulated = 0.0
-    model.set_well_controls(time=time_simulated, type='rate')
-    success = run_main(model, days=50 * 365, out_dir=out_dir, ini=True)
-    if not success:
-        print(f"[FAIL] Simulation step {0} with dt={dt} failed or aborted.")
-        return False
     model.do_after_step()
+    for ith_step, dt in enumerate(model.idata.sim.time_steps):
+        model.set_well_controls(time=time_simulated)
+        success = run_main_new(model, days=dt, out_dir=out_dir)
+        if not success:
+            print(f"[FAIL] Simulation step {ith_step} with dt={dt} failed or aborted.")
+            return False
+        model.do_after_step()
+        time_simulated += dt
     return True
-
 
 def run_main(model, days: float = None, restart_dt: float = 0., save_well_data: bool = True,
              save_solution_data: bool = True, log_3d_body_path: bool = False, verbose: bool = True,
@@ -93,15 +96,10 @@ def run_main(model, days: float = None, restart_dt: float = 0., save_well_data: 
     import os
     from math import fabs
 
-    if ini:
-        model.bhp_yes = False
-    else:
-        model.bhp_yes = True
-
     # Time-progress pairs (real time in seconds, min simulated days)
     progress_thresholds = [
         # (0.5 * 3600, 50),       # After 30 min, should be at least 50 days
-        (4 * 3600, 3650),  # After 2.5 hrs, should be at least 10 years
+        (2 * 3600, 3650),  # After 2.5 hrs, should be at least 10 years
         (5 * 3600, 7300)  # After 5 hrs, should be at least 20 years
     ]
 
@@ -199,6 +197,118 @@ def run_main(model, days: float = None, restart_dt: float = 0., save_well_data: 
                  model.physics.engine.stat.n_linear_wasted))
     return True
 
+def run_main_new(self, days: float = None, restart_dt: float = 0., save_well_data: bool = True,
+                 save_well_data_after_run: bool = False,
+                 save_reservoir_data: bool = True, verbose: bool = True,
+                 out_dir: str = "."):
+    """
+    Enhanced version with wall-time progress monitoring.
+    """
+    import numpy as np
+    import time
+    import os
+    from math import fabs
+
+    days = days if days is not None else self.runtime
+    data_ts = self.data_ts
+
+    # Time-progress thresholds: (wall time in seconds, min simulated days)
+    progress_thresholds = [
+        (2.5 * 3600, 3650),   # After 2.5 hrs, should simulate at least 10 years
+        (5 * 3600, 7300)      # After 5 hrs, should simulate at least 20 years
+    ]
+
+    t = self.physics.engine.t
+    stop_time = t + days
+
+    if fabs(t) < 1e-15 or not hasattr(self, 'prev_dt'):
+        dt = data_ts.dt_first
+    elif restart_dt > 0.:
+        dt = restart_dt
+    else:
+        dt = min(self.prev_dt * data_ts.dt_mult, days, data_ts.dt_max)
+
+    self.prev_dt = dt
+    ts = 0
+    time_start = time.time()
+
+    nc = self.physics.n_vars
+    nb = self.reservoir.mesh.n_res_blocks
+    max_dx = np.zeros(nc)
+
+    omega = 0. if np.fabs(data_ts.dt_mult - 1) < 1e-10 else 1 / (data_ts.dt_mult - 1)
+
+    while t < stop_time:
+        wall_time = time.time() - time_start
+        print('Walltime =', wall_time, 'Simulated time =', t)
+        # Progress check
+        for real_sec, min_days in progress_thresholds:
+            if wall_time > real_sec and t < min_days:
+                reason = (f"[STOP] Simulation too slow: {wall_time:.1f}s elapsed but only {t:.1f} days simulated.\n"
+                          f"Expected >= {min_days} days after {real_sec / 60:.1f} min.")
+                print(reason)
+                with open(os.path.join(out_dir, "no_convergence_info.txt"), "w") as f:
+                    f.write(reason)
+                    f.write(f"\nStopped at timestep {ts}, dt={dt}\n")
+                return False
+
+        xn = np.array(self.physics.engine.Xn, copy=True)[:nb * nc]
+        converged = self.run_timestep(dt, t, verbose)
+
+        if converged:
+            t += dt
+            self.physics.engine.t = t
+            ts += 1
+
+            x = np.array(self.physics.engine.X, copy=False)[:nb * nc]
+            dt_mult_new = data_ts.dt_mult
+            for i in range(nc):
+                max_dx[i] = np.max(abs(xn[i::nc] - x[i::nc]))
+                mult = ((1 + omega) * data_ts.eta[i]) / (max_dx[i] + omega * data_ts.eta[i])
+                if mult < dt_mult_new:
+                    dt_mult_new = mult
+
+            if verbose:
+                print("# %d \tT = %3g\tDT = %2g\tNI = %d\tLI=%d\tDT_MULT=%3.3g\tdX=%4s"
+                      % (ts, t, dt, self.physics.engine.n_newton_last_dt, self.physics.engine.n_linear_last_dt,
+                         dt_mult_new, np.round(max_dx, 3)))
+
+            dt = min(dt * dt_mult_new, data_ts.dt_max)
+
+            if np.fabs(t + dt - stop_time) < data_ts.dt_min:
+                dt = stop_time - t
+            if t + dt > stop_time:
+                dt = stop_time - t
+            else:
+                self.prev_dt = dt
+
+            if save_well_data and not save_well_data_after_run:
+                self.output.save_data_to_h5(kind='well')
+
+        else:
+            dt /= data_ts.dt_mult
+            if verbose:
+                print("Cut timestep to %2.10f" % dt)
+            if dt < data_ts.dt_min:
+                print('Stop simulation. Reason: reached min. timestep', data_ts.dt_min, 'dt=', dt)
+                return False
+
+    self.physics.engine.t = stop_time
+
+    if save_well_data and save_well_data_after_run:
+        self.output.save_data_to_h5(kind='well')
+
+    if save_reservoir_data:
+        self.output.save_data_to_h5(kind='reservoir')
+
+    if verbose:
+        print("TS = %d(%d), NI = %d(%d), LI = %d(%d)"
+              % (self.physics.engine.stat.n_timesteps_total, self.physics.engine.stat.n_timesteps_wasted,
+                 self.physics.engine.stat.n_newton_total, self.physics.engine.stat.n_newton_wasted,
+                 self.physics.engine.stat.n_linear_total, self.physics.engine.stat.n_linear_wasted))
+
+    return True
+
 
 def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_log=True, platform='cpu', save_ring=True,
         save_all_results=1, ring_radii=[5, 10]):
@@ -227,6 +337,7 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
     m = ModelCCS()
     m.physics_type = physics_type
     m.bhp_yes = True
+
     # Save init output (set_input_data + init_reservoir) to a dedicated log file
     init_log_path = os.path.join(out_dir, "init_reservoir_output.log")
     with open(init_log_path, "w") as f:
@@ -234,26 +345,18 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
         with redirect_stdout(tee):
             m.set_input_data(case=case)
             m.init_reservoir()
-            # well_head_depth_inj_pressure = m.set_well_controls()
-            # print('The well head depth inj pressure = ', well_head_depth_inj_pressure, 'bar')
-            m.init(output_folder=out_dir, platform=platform)
+            # m.init(output_folder=out_dir, platform=platform) #ORIGINAL
+            m.init(platform=platform)  # NEW
 
-    m.save_data_to_h5(kind='solution')
+    m.set_output(output_folder=out_dir)
 
-    # ini = run_simulation_ini(m, out_dir)
-    # if not ini:
-    #     print("[Watch Out] Initialization stopped early. Skipping output writing.")
-    #     return None, None, None, None, None
-
-    m.physics.engine.t = 0  # return engine time to zero
-    m.bhp_yes = True
-    m.set_well_controls()
+    # m.save_data_to_h5(kind='solution') #Original
 
     standard_print_path = os.path.join(out_dir, "run_n_standard_print.log")
     with open(standard_print_path, "w") as std_log_file:
         tee = Tee(sys.stdout, std_log_file)
         with redirect_stdout(tee):
-            completed = run_simulation_main(m, out_dir=out_dir)
+            completed = run_simulation_main_new(m, out_dir=out_dir)
     if not completed:
         print("[Watch Out] Simulation stopped early. Skipping output writing.")
         return None, None, None, None, None
@@ -299,6 +402,7 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
     import matplotlib.pyplot as plt
 
     def output_to_satV(self, output_directory, satV=[], threshold=0.05):
+        cell_area_m2 = 25 * 25  # m²
         props_names = ['satV']
         nx, ny, nz = map(int, self.reservoir.dims)
 
@@ -310,7 +414,7 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
         coord = np.array(COORD).reshape(-1, 6)
 
         # Manual well location (1-based), convert to 0-based
-        i_well, j_well = 90 - 1, 95 - 1  # 14, 14 #90 - 1, 95 - 1 #WATCH OUT, CHANGE!
+        i_well, j_well = 14, 14 #90 - 1, 95 - 1  # 14, 14 #90 - 1, 95 - 1 #WATCH OUT, CHANGE!
         x_well, y_well = get_cell_center(i_well, j_well, coord, nx)
 
         # Top-layer indices
@@ -333,8 +437,7 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
             directions = ['E', 'NE', 'N', 'NW', 'W', 'SW', 'S', 'SE']
             return directions[int(((angle + 22.5) % 360) // 45)]
 
-        # Apply this when assigning directions to top-layer cells
-        # Flip both dx and dy to align with compass orientation
+        # Assign directions to top-layer cells
         directions = [
             classify_direction((x - x_well), -(y - y_well))
             for x, y in zip(x_centers, y_centers)
@@ -342,10 +445,9 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
 
         directional_plume = []
 
-        for ith_step in range(len(self.idata.sim.time_steps)):
-            _, property_array = self.output_properties(output_properties=props_names, timestep=ith_step)
+        for ith_step in range(1, len(self.idata.sim.time_steps) + 1):
+            _, property_array = self.output.output_properties(output_properties=props_names, timestep=ith_step)
             satV_top = property_array['satV'][0][top_layer_indices]
-            satV.append(satV_top)
 
             dir_to_max_dist = {d: 0.0 for d in ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW']}
 
@@ -359,9 +461,14 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
                 if dist > dir_to_max_dist[direction]:
                     dir_to_max_dist[direction] = dist
 
+            # Compute plume surface area
+            plume_cell_count = np.sum(satV_top >= threshold)
+            plume_surface_m2 = plume_cell_count * cell_area_m2
+            dir_to_max_dist['PlumeSurface_m2'] = plume_surface_m2
+
             directional_plume.append(dir_to_max_dist)
 
-        # Save plume CSV and final rose diagram
+        # Save outputs
         save_directional_plume_to_csv(directional_plume, output_directory)
         save_final_rose_diagram(directional_plume, output_directory)
 
@@ -405,30 +512,27 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
         plt.close()
         print(f"[Output] Saved rose diagram to: {full_path}")
 
-    # directional_plume = output_to_satV(m, output_directory=out_dir, satV=[], threshold=0.05)
-
-    # from darts.tools.flux_tools import get_wells_components_molar_rates
-    # rates_dict = get_wells_components_molar_rates(m)  # model is an object
-    # print('hello')
-    # print(rates_dict)
+    directional_plume = output_to_satV(m, output_directory=out_dir, satV=[], threshold=0.05)
 
     def add_columns_time_data(time_data):
         molar_mass_co2 = 44.01  # kg/kmol
         molar_density = 19.7239  # kmol/m3 at 161 bar, 300K
         time_data['Time (years)'] = time_data['time'] / 365.25
         for k in list(time_data.keys()):
-            if physics_type == 'ccs' and 'V rate (m3/day)' in k:
-                # time_data[k.replace('V rate (m3/day)', 'V rate (kmol/day)')] = time_data[k]
-                time_data[k.replace('V rate (m3/day)', 'V rate (ton/day)')] = time_data[
-                                                                                  k] * molar_density * molar_mass_co2 / 1000  # m3/day * kmol/m3 * kg/kmol / 1000 = ton/day
-                # time_data.drop(columns=k, inplace=True)
-            if physics_type == 'ccs' and 'V  volume (m3)' in k:
-                # time_data[k.replace('V  volume (m3)', 'V volume (kmol)')] = time_data[k]
-                time_data[k.replace('V  volume (m3)', 'V volume (Mt/year)')] = time_data[
-                                                                                   k] * molar_density * molar_mass_co2 / 1000 / 1e6  # m3/year * kmol/m3 * kg/kmol / 1000 = ton/year / 1e6 = Mt/year
-                # time_data.drop(columns=k, inplace=True)
+            if physics_type == 'ccs' and 'well_INJ_molar_rate_CO2_by_sum_perfs' in k:
+                time_data[k.replace('well_INJ_molar_rate_CO2_by_sum_perfs', 'V rate (ton/day)')] = time_data[k] * molar_mass_co2 / 1000  # kmol/day * kg/kmol / 1000 = ton/day
 
-    time_data = pd.DataFrame.from_dict(m.physics.engine.time_data)
+            if physics_type == 'ccs' and 'V  volume (m3)' in k:
+                time_data[k.replace('V  volume (m3)', 'V volume (Mt/year)')] = time_data[k] * molar_density * molar_mass_co2 / 1000 / 1e6  # m3/year * kmol/m3 * kg/kmol / 1000 = ton/year / 1e6 = Mt/year
+
+
+
+    reporting_units = ['components_mass_rates', "components_molar_rates"] #["phases_molar_rates","phases_mass_rates","phases_volumetric_rates","components_molar_rates","components_mass_rates"]
+
+    td = m.output.store_well_time_data(reporting_units)
+    time_data = pd.DataFrame.from_dict(td)
+
+    #time_data = pd.DataFrame.from_dict(m.physics.engine.time_data)
     add_columns_time_data(time_data)
     time_data.to_pickle(os.path.join(out_dir, 'time_data.pkl'))
 
@@ -436,11 +540,15 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
     add_columns_time_data(time_data_report)
     time_data_report.to_pickle(os.path.join(out_dir, 'time_data_report.pkl'))
 
-    for key, values in m.my_tracked_pressures.items():  # for pressure tracker
+    for key, values in m.my_tracked_pressures.items():
         if len(values) == len(time_data_report):
             time_data_report[key] = values
+        elif len(values) == len(time_data_report) + 1:
+            # First value corresponds to t=0
+            time_data_report[f"{key}_0"] = values[0]  # Store as a separate column
+            time_data_report[key] = values[1:]  # Assign the rest as usual
         else:
-            print(f"[Tracker Warning] Skipping {key}: len(values)={len(values)} vs time steps={len(time_data_report)}")
+            print(f"[Tracker Warning] Skipping {key}: unexpected length {len(values)} vs {len(time_data_report)}")
 
     writer = pd.ExcelWriter(os.path.join(out_dir, 'time_data.xlsx'))
     time_data.to_excel(writer, sheet_name='time_data')
@@ -470,35 +578,14 @@ def run(physics_type: str, case: str, out_dir: str, export_vtk=True, redirect_lo
     if redirect_log:
         plot_convergence_metrics_from_log(log_path, out_dir, case)
 
-    if ring_radii[0] == 1:
-        ring_radii = np.arange(1, 28)
-
     if export_vtk:
-        if len(save_all_results) == 1 and save_all_results[0] == 1:
+        if export_vtk:
             # read h5 file and write vtk
             m.reservoir.create_vtk_wells(output_directory=out_dir)
-            for ith_step in range(len(m.idata.sim.time_steps)):
-                # m.output_to_vtk(ith_step=ith_step)
-                output_to_vtk(m, ith_step=ith_step)
-
-        if len(save_all_results) == 2:
-            # read h5 file and write vtk
-            m.reservoir.create_vtk_wells(output_directory=out_dir)
-            steps_to_export = [0] + list(
-                range(save_all_results[0], len(m.idata.sim.time_steps), save_all_results[1])) + [
-                                  len(m.idata.sim.time_steps) - 1]
+            steps_to_export = [len(m.idata.sim.time_steps)]# + 1]
+            output_properties = ['satV', 'satA', 'xCO2', 'yCO2', 'pressure', 'temperature']
             for ith_step in steps_to_export:
-                output_to_vtk(m, ith_step=ith_step)
-
-        else:
-            # read h5 file and write vtk
-            m.reservoir.create_vtk_wells(output_directory=out_dir)
-            # for ith_step in range(len(m.idata.sim.time_steps)):
-            #     # m.output_to_vtk(ith_step=ith_step)
-            #     output_to_vtk(m, ith_step=ith_step)
-            steps_to_export = [len(m.idata.sim.time_steps) - 1]
-            for ith_step in steps_to_export:
-                output_to_vtk(m, ith_step=ith_step)
+                m.output.output_to_vtk(ith_step=ith_step, output_properties=output_properties)
 
     # Optional: Remove large files
     for fname in ['solution.h5']:  # , 'well_data.h5']: #,'time_data.pkl', 'time_data_report.pkl']:
@@ -534,7 +621,8 @@ def plot_results(wells, well_is_inj, time_data_list, time_data_report_list,
         acc_df = darts_df.copy()
 
         # ✅ Step 1: Detect when injection starts (INJ1 rate > 1)
-        inj_cols = [col for col in acc_df.columns if "INJ" in col and "V rate (ton/day)" in col]
+        #inj_cols = [col for col in acc_df.columns if "INJ" in col and "V rate (ton/day)" in col]
+        inj_cols = [col for col in acc_df.columns if "well_INJ_mass_rate_CO2_by_sum_perfs" in col]
         first_injection_idx = None
         for col in inj_cols:
             first_above_one = acc_df[acc_df[col] > 1.0]
@@ -961,7 +1049,7 @@ if __name__ == '__main__':
 
     cases_list = []
     cases_list += ['grid_CCS_maarten']
-    #cases_list += ['fault=FM1_cut=CO1_grid=G1_top=TS1_mod=OBJ_mult=1'] #This one does converge
+    #cases_list += ['fault=FM1_cut=CO1_grid=G1_top=TS1_mod=OBJ_mult=1']  # This one does converge
     #cases_list += ['fault=FM1_cut=CO1_grid=G1_top=TS2_mod=PIX_mult=2'] #This one does not converge
     cases_list = [(i, case) for i, case in enumerate(cases_list)]
 
@@ -978,7 +1066,7 @@ if __name__ == '__main__':
                 tag = f"{int(case_idx):03d}"
 
                 case = case_geom + '_' + wctrl
-                folder_name = 'results_' + physics_type + '_' + case + '_' + tag + "MS_Check"
+                folder_name = 'results_' + physics_type + '_' + case + '_' + tag + "MS_Check_109"
                 out_dir = os.path.join("results", folder_name)
 
                 time_data, time_data_report, wells, well_is_inj, total_poro_volume = run(

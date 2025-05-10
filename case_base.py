@@ -76,8 +76,8 @@ def get_case_files(case: str):
 
 #def input_data_base(idata: InputData, case: str):
 def input_data_base(idata: CustomInputData, case: str):
-    dt = 2 #1e-5 #365 #365 #365.25 #365.25  # one report timestep length, [days]
-    idata.sim.n_time_steps = 30 #3 #8 #5 #8 #20 #20 #12#4 #30 #was 20
+    dt = 50 #365 #365 #365.25 #365.25  # one report timestep length, [days]
+    idata.sim.n_time_steps = 3 #3 #8 #5 #8 #20 #20 #12#4 #30 #was 20
     idata.sim.time_steps = np.zeros(idata.sim.n_time_steps) + dt
 
     # time stepping and convergence parameters

@@ -16,8 +16,6 @@ from dartsflash.libflash import NegativeFlash
 from dartsflash.libflash import CubicEoS, AQEoS, FlashParams, InitialGuess
 from dartsflash.components import CompData
 
-from cpg_reservoir import CPG_Reservoir
-
 from model_cpg import Model_CPG, fmt
 
 from dataclasses import dataclass, field
@@ -102,7 +100,6 @@ class ModelCCS(Model_CPG):
             min_t=self.idata.obl.min_t,
             max_t=self.idata.obl.max_t,
             state_spec=state_spec,
-            # thermal=self.idata.obl.thermal,
             cache=self.idata.obl.cache
         )
 
@@ -229,7 +226,7 @@ class ModelCCS(Model_CPG):
         self.idata.obl.min_z = self.idata.obl.zero
         self.idata.obl.max_z = 1 - self.idata.obl.zero
         self.idata.obl.cache = False  # True #False
-        self.idata.obl.thermal = True  # True #This sets case to non-isothermal
+        self.idata.obl.thermal = True  # True #This sets case to non-isothermal #This one doesn't matter
 
     def set_initial_conditions(self):
 
@@ -251,6 +248,10 @@ class ModelCCS(Model_CPG):
             'H2O': [
                 0.99995
             ],
+            # 'temperature': [
+            #     273.15 + 76.85
+            # ]
+
             'temperature': [
                 20 + 273.15 + input_depth[0] * temperature_grad / 1000,
                 20 + 273.15 + input_depth[1] * temperature_grad / 1000
@@ -276,7 +277,7 @@ class ModelCCS(Model_CPG):
         res_block_local = (i - 1) + nx * (j - 1) + nx * ny * (k - 1)
         well_head_depth = self.reservoir.depth[res_block_local]
         pressure_gradient = 100  # bar / km
-        well_head_depth_inj_pressure = 1 + well_head_depth * pressure_gradient / 1000 + 4  # dP of 5 bar
+        well_head_depth_inj_pressure = 1 + well_head_depth * pressure_gradient / 1000 + 8  # dP of 5 bar
         print('well_head_depth_pressure = ', well_head_depth_inj_pressure)
         # well_head_depth_inj_pressure = 160
         mt = 1e9  # kg
@@ -292,7 +293,8 @@ class ModelCCS(Model_CPG):
         else:
             print("The string 'rate' is found as control!")
             for w in wells:
-                wdata.add_inj_rate_control(name=w, rate=inj_rate, bhp_constraint=250, temperature=300,
+                control_type = well_control_iface.WellControlType.MOLAR_RATE  # kmol/day
+                wdata.add_inj_rate_control(name=w, rate=inj_rate, rate_type = control_type, bhp_constraint=250, temperature=300,
                                            phase_name='V')  # rate=5e5/8 is approximately 1 Mt per year #was rate = 6e6 # kmol/day | bars | K
                 type = 'rate'
 
