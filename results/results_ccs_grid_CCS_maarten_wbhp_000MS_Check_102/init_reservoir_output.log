@@ -1,0 +1,69 @@
+reading wells (COMPDAT) from meshes\grid_CCS_maarten\sch.inc
+WELLS read from SCH file: 1
+No PERMZ found in input files. PERMZ=PERMX/10 will be used
+Number of all cells    =  25000
+Number of active cells =  18038
+[FaultMult] Building fast lookup map...
+[FaultMult] Reading fault file...
+[FaultMult] Done. Applied: 3, Skipped: 3
+tran  mean= 59.612094064426635 tran  max= 534.2447039194891
+tranD mean= 670.9246569773716 tranD max= 6265.5398295325
+Pore volume = 178408233.1177455
+[Tracker] Found tracked cells: []
+Added perforation for well INJ to block 356 IJK=[7, 15, 1] XYZ=(645.337791, 1462.942386, 1669.836250) with WI=5.499584 WID=0.000000
+Added perforation for well INJ to block 981 IJK=[7, 15, 2] XYZ=(645.337791, 1462.942386, 1674.836250) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 1606 IJK=[7, 15, 3] XYZ=(645.337791, 1462.942386, 1679.835000) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 2231 IJK=[7, 15, 4] XYZ=(645.337791, 1462.942386, 1684.837500) with WI=5.502333 WID=0.000000
+Added perforation for well INJ to block 2856 IJK=[7, 15, 5] XYZ=(645.337791, 1462.942386, 1689.838750) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 3481 IJK=[7, 15, 6] XYZ=(645.337791, 1462.942386, 1694.837500) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 4106 IJK=[7, 15, 7] XYZ=(645.337791, 1462.942386, 1699.836250) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 4731 IJK=[7, 15, 8] XYZ=(645.337791, 1462.942386, 1704.836250) with WI=5.499584 WID=0.000000
+Added perforation for well INJ to block 5356 IJK=[7, 15, 9] XYZ=(645.337791, 1462.942386, 1709.836250) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 5981 IJK=[7, 15, 10] XYZ=(645.337791, 1462.942386, 1714.835000) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 6606 IJK=[7, 15, 11] XYZ=(645.337791, 1462.942386, 1719.836250) with WI=5.499584 WID=0.000000
+Added perforation for well INJ to block 7231 IJK=[7, 15, 12] XYZ=(645.337791, 1462.942386, 1724.837500) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 7856 IJK=[7, 15, 13] XYZ=(645.337791, 1462.942386, 1729.837500) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 8481 IJK=[7, 15, 14] XYZ=(645.337791, 1462.942386, 1734.836250) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 9106 IJK=[7, 15, 15] XYZ=(645.337791, 1462.942386, 1739.835000) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 9731 IJK=[7, 15, 16] XYZ=(645.337791, 1462.942386, 1744.836250) with WI=5.499584 WID=0.000000
+Added perforation for well INJ to block 10356 IJK=[7, 15, 17] XYZ=(645.337791, 1462.942386, 1749.836250) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 10981 IJK=[7, 15, 18] XYZ=(645.337791, 1462.942386, 1754.836250) with WI=5.499584 WID=0.000000
+Added perforation for well INJ to block 11606 IJK=[7, 15, 19] XYZ=(645.337791, 1462.942386, 1759.836250) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 12231 IJK=[7, 15, 20] XYZ=(645.337791, 1462.942386, 1764.836250) with WI=5.499584 WID=0.000000
+Added perforation for well INJ to block 12856 IJK=[7, 15, 21] XYZ=(645.337791, 1462.942386, 1769.836250) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 13481 IJK=[7, 15, 22] XYZ=(645.337791, 1462.942386, 1774.835000) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 14106 IJK=[7, 15, 23] XYZ=(645.337791, 1462.942386, 1779.837500) with WI=5.502333 WID=0.000000
+Added perforation for well INJ to block 14731 IJK=[7, 15, 24] XYZ=(645.337791, 1462.942386, 1784.838750) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 15308 IJK=[7, 15, 25] XYZ=(645.337791, 1462.942386, 1789.837500) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 15773 IJK=[7, 15, 26] XYZ=(645.337791, 1462.942386, 1794.836250) with WI=5.494088 WID=0.000000
+Added perforation for well INJ to block 16197 IJK=[7, 15, 27] XYZ=(645.337791, 1462.942386, 1799.835000) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 16596 IJK=[7, 15, 28] XYZ=(645.337791, 1462.942386, 1804.835000) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 16992 IJK=[7, 15, 29] XYZ=(645.337791, 1462.942386, 1809.835000) with WI=5.496836 WID=0.000000
+Added perforation for well INJ to block 17358 IJK=[7, 15, 30] XYZ=(645.337791, 1462.942386, 1814.836250) with WI=5.499584 WID=0.000000
+Added perforation for well INJ to block 17686 IJK=[7, 15, 31] XYZ=(645.337791, 1462.942386, 1819.242500) with WI=4.188589 WID=0.000000
+Neglected perforation for well INJ to block [7, 15, 32] (inactive block)
+Neglected perforation for well INJ to block [7, 15, 33] (inactive block)
+Neglected perforation for well INJ to block [7, 15, 34] (inactive block)
+Neglected perforation for well INJ to block [7, 15, 35] (inactive block)
+Neglected perforation for well INJ to block [7, 15, 36] (inactive block)
+Neglected perforation for well INJ to block [7, 15, 37] (inactive block)
+Neglected perforation for well INJ to block [7, 15, 38] (inactive block)
+Neglected perforation for well INJ to block [7, 15, 39] (inactive block)
+Neglected perforation for well INJ to block [7, 15, 40] (inactive block)
+well_head_depth_pressure =  175.96349999999998
+The string 'wbhp' is found as control!
+Simulation parameters:
+	 eta = [1.e+20 1.e+20 1.e+20]
+	 dt_first = 1e-05
+	 dt_min = 1e-15
+	 dt_mult = 1.3
+	 dt_max = 10
+	 newton_tol = 0.001
+	 newton_tol_wel_mult = 100.0
+	 newton_tol_stationary = 0.001
+	 newton_max_iter = 20
+	 linear_tol = 1e-05
+	 linear_max_iter = 50
+	 linear_type = None
+	 line_search = False
+	 min_line_search_update = 0.0001

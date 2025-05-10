@@ -1,0 +1,1277 @@
+well_head_depth_pressure =  175.96349999999998
+The string 'wbhp' is found as control!
+Walltime = 0.0 Simulated time = 0.0
+# 1 	T = 1e-05	DT = 1e-05	NI = 5	LI=7	DT_MULT=1.3	dX=[0.011 0.    0.   ]
+Walltime = 0.4250028133392334 Simulated time = 1e-05
+# 2 	T = 2.3e-05	DT = 1.3e-05	NI = 1	LI=2	DT_MULT=1.3	dX=[0.014 0.    0.   ]
+Walltime = 0.5169994831085205 Simulated time = 2.3000000000000003e-05
+# 3 	T = 3.99e-05	DT = 1.69e-05	NI = 1	LI=2	DT_MULT=1.3	dX=[0.018 0.    0.   ]
+Walltime = 0.6059999465942383 Simulated time = 3.990000000000001e-05
+# 4 	T = 6.187e-05	DT = 2.197e-05	NI = 1	LI=2	DT_MULT=1.3	dX=[0.023 0.    0.   ]
+Walltime = 0.7250001430511475 Simulated time = 6.187e-05
+# 5 	T = 9.0431e-05	DT = 2.8561e-05	NI = 2	LI=3	DT_MULT=1.3	dX=[0.03 0.   0.  ]
+Walltime = 0.8759996891021729 Simulated time = 9.0431e-05
+# 6 	T = 0.00012756	DT = 3.71293e-05	NI = 2	LI=4	DT_MULT=1.3	dX=[0.039 0.    0.   ]
+Walltime = 1.0560004711151123 Simulated time = 0.0001275603
+# 7 	T = 0.000175828	DT = 4.82681e-05	NI = 2	LI=4	DT_MULT=1.3	dX=[0.05 0.   0.  ]
+Walltime = 1.1909997463226318 Simulated time = 0.00017582839
+# 8 	T = 0.000238577	DT = 6.27485e-05	NI = 1	LI=2	DT_MULT=1.3	dX=[0.063 0.    0.   ]
+Walltime = 1.2669994831085205 Simulated time = 0.000238576907
+# 9 	T = 0.00032015	DT = 8.15731e-05	NI = 2	LI=4	DT_MULT=1.3	dX=[0.081 0.    0.   ]
+Walltime = 1.376999855041504 Simulated time = 0.0003201499791
+# 10 	T = 0.000426195	DT = 0.000106045	NI = 2	LI=4	DT_MULT=1.3	dX=[0.102 0.    0.   ]
+Walltime = 1.4989993572235107 Simulated time = 0.00042619497283
+# 11 	T = 0.000564053	DT = 0.000137858	NI = 2	LI=4	DT_MULT=1.3	dX=[0.128 0.    0.   ]
+Walltime = 1.6209990978240967 Simulated time = 0.000564053464679
+# 12 	T = 0.00074327	DT = 0.000179216	NI = 2	LI=4	DT_MULT=1.3	dX=[0.16 0.   0.  ]
+Walltime = 1.7519996166229248 Simulated time = 0.0007432695040827001
+# 13 	T = 0.00097625	DT = 0.000232981	NI = 2	LI=6	DT_MULT=1.3	dX=[0.196 0.    0.   ]
+Walltime = 1.878000259399414 Simulated time = 0.0009762503553075102
+# 14 	T = 0.00127913	DT = 0.000302875	NI = 2	LI=6	DT_MULT=1.3	dX=[0.238 0.    0.   ]
+Walltime = 2.0119998455047607 Simulated time = 0.0012791254618997633
+# 15 	T = 0.00167286	DT = 0.000393738	NI = 2	LI=4	DT_MULT=1.3	dX=[0.282 0.    0.001]
+Walltime = 2.128000020980835 Simulated time = 0.0016728631004696924
+# 16 	T = 0.00218472	DT = 0.000511859	NI = 2	LI=8	DT_MULT=1.3	dX=[0.327 0.    0.001]
+Walltime = 2.2770004272460938 Simulated time = 0.0021847220306106
+# 17 	T = 0.00285014	DT = 0.000665417	NI = 2	LI=6	DT_MULT=1.3	dX=[0.368 0.    0.001]
+Walltime = 2.410999298095703 Simulated time = 0.0028501386397937803
+# 18 	T = 0.00371518	DT = 0.000865042	NI = 2	LI=6	DT_MULT=1.3	dX=[0.399 0.    0.001]
+Walltime = 2.5499989986419678 Simulated time = 0.0037151802317319147
+# 19 	T = 0.00483973	DT = 0.00112455	NI = 2	LI=6	DT_MULT=1.3	dX=[0.414 0.    0.001]
+Walltime = 2.6780011653900146 Simulated time = 0.004839734301251489
+# 20 	T = 0.00630165	DT = 0.00146192	NI = 1	LI=3	DT_MULT=1.3	dX=[0.409 0.    0.001]
+Walltime = 2.752000331878662 Simulated time = 0.006301654591626936
+# 21 	T = 0.00820215	DT = 0.0019005	NI = 1	LI=3	DT_MULT=1.3	dX=[0.38  0.    0.001]
+Walltime = 2.844999313354492 Simulated time = 0.008202150969115017
+# 22 	T = 0.0106728	DT = 0.00247065	NI = 1	LI=4	DT_MULT=1.3	dX=[0.332 0.    0.001]
+Walltime = 2.949000120162964 Simulated time = 0.010672796259849522
+# 23 	T = 0.0138846	DT = 0.00321184	NI = 1	LI=4	DT_MULT=1.3	dX=[0.273 0.    0.001]
+Walltime = 3.0630011558532715 Simulated time = 0.013884635137804378
+# 24 	T = 0.01806	DT = 0.00417539	NI = 1	LI=3	DT_MULT=1.3	dX=[0.214 0.    0.001]
+Walltime = 3.160003423690796 Simulated time = 0.01806002567914569
+# 25 	T = 0.023488	DT = 0.00542801	NI = 1	LI=3	DT_MULT=1.3	dX=[0.182 0.    0.001]
+Walltime = 3.2639999389648438 Simulated time = 0.0234880333828894
+# 26 	T = 0.0305444	DT = 0.00705641	NI = 1	LI=3	DT_MULT=1.3	dX=[0.184 0.    0.001]
+Walltime = 3.348999500274658 Simulated time = 0.03054444339775622
+Stationary point detected!
+Cut timestep to 0.0070564100
+Walltime = 4.037004709243774 Simulated time = 0.03054444339775622
+Stationary point detected!
+Cut timestep to 0.0054280077
+Walltime = 4.601000070571899 Simulated time = 0.03054444339775622
+# 27 	T = 0.0359725	DT = 0.00542801	NI = 7	LI=17	DT_MULT=1.3	dX=[0.118 0.    0.001]
+Walltime = 5.040000915527344 Simulated time = 0.03597245110149993
+# 28 	T = 0.0430289	DT = 0.00705641	NI = 3	LI=8	DT_MULT=1.3	dX=[0.124 0.    0.001]
+Walltime = 5.263999938964844 Simulated time = 0.04302886111636675
+Cut timestep to 0.0070564100
+Walltime = 6.703999996185303 Simulated time = 0.04302886111636675
+Cut timestep to 0.0054280077
+Walltime = 8.138999700546265 Simulated time = 0.04302886111636675
+Cut timestep to 0.0041753905
+Walltime = 9.56100058555603 Simulated time = 0.04302886111636675
+Cut timestep to 0.0032118389
+Walltime = 10.994999647140503 Simulated time = 0.04302886111636675
+Cut timestep to 0.0024706453
+Walltime = 12.405999660491943 Simulated time = 0.04302886111636675
+# 29 	T = 0.0454995	DT = 0.00247065	NI = 6	LI=20	DT_MULT=1.3	dX=[0.04 0.   0.  ]
+Walltime = 12.825000047683716 Simulated time = 0.04549950640710126
+Cut timestep to 0.0024706453
+Walltime = 14.294999361038208 Simulated time = 0.04549950640710126
+Cut timestep to 0.0019004964
+Walltime = 15.674000024795532 Simulated time = 0.04549950640710126
+Cut timestep to 0.0014619203
+Walltime = 16.844000101089478 Simulated time = 0.04549950640710126
+Cut timestep to 0.0011245541
+Walltime = 18.024999141693115 Simulated time = 0.04549950640710126
+Cut timestep to 0.0008650416
+Walltime = 19.232000589370728 Simulated time = 0.04549950640710126
+Cut timestep to 0.0006654166
+Walltime = 20.32599973678589 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0005118589
+Walltime = 21.269001007080078 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0003937376
+Walltime = 22.092000722885132 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0003028751
+Walltime = 22.741002082824707 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0002329809
+Walltime = 23.46299982070923 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0001792160
+Walltime = 24.088000774383545 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0001378585
+Walltime = 24.588000297546387 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0001060450
+Walltime = 25.0049991607666 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0000815731
+Walltime = 25.438999891281128 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 25.87700057029724 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 26.365999937057495 Simulated time = 0.04549950640710126
+# 30 	T = 0.0455478	DT = 4.82681e-05	NI = 2	LI=3	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 26.47599983215332 Simulated time = 0.045547774497101255
+# 31 	T = 0.0456105	DT = 6.27485e-05	NI = 1	LI=1	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 26.529000520706177 Simulated time = 0.045610523014101255
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 27.244000911712646 Simulated time = 0.045610523014101255
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 28.000000715255737 Simulated time = 0.045610523014101255
+# 32 	T = 0.0456588	DT = 4.82681e-05	NI = 1	LI=1	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 28.07400131225586 Simulated time = 0.04565879110410125
+# 33 	T = 0.0457215	DT = 6.27485e-05	NI = 1	LI=1	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 28.14400005340576 Simulated time = 0.04572153962110125
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 28.768999814987183 Simulated time = 0.04572153962110125
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 29.435004472732544 Simulated time = 0.04572153962110125
+# 34 	T = 0.0457698	DT = 4.82681e-05	NI = 1	LI=1	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 29.49899959564209 Simulated time = 0.04576980771110125
+# 35 	T = 0.0458326	DT = 6.27485e-05	NI = 1	LI=1	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 29.561999082565308 Simulated time = 0.04583255622810125
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 30.222999811172485 Simulated time = 0.04583255622810125
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 30.846999645233154 Simulated time = 0.04583255622810125
+# 36 	T = 0.0458808	DT = 4.82681e-05	NI = 1	LI=1	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 30.90200114250183 Simulated time = 0.04588082431810125
+# 37 	T = 0.0459436	DT = 6.27485e-05	NI = 1	LI=1	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 30.96600103378296 Simulated time = 0.04594357283510125
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 31.601999759674072 Simulated time = 0.04594357283510125
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 32.209999561309814 Simulated time = 0.04594357283510125
+# 38 	T = 0.0459918	DT = 4.82681e-05	NI = 2	LI=3	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 32.307000160217285 Simulated time = 0.045991840925101245
+# 39 	T = 0.0460546	DT = 6.27485e-05	NI = 1	LI=1	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 32.36299967765808 Simulated time = 0.046054589442101244
+# 40 	T = 0.0461362	DT = 8.15731e-05	NI = 1	LI=1	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 32.42699956893921 Simulated time = 0.046136162514201245
+# 41 	T = 0.0462422	DT = 0.000106045	NI = 1	LI=1	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 32.509000301361084 Simulated time = 0.046242207507931246
+# 42 	T = 0.0463801	DT = 0.000137858	NI = 1	LI=2	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 32.572999477386475 Simulated time = 0.04638006599978024
+# 43 	T = 0.0465593	DT = 0.000179216	NI = 1	LI=1	DT_MULT=1.3	dX=[0.003 0.    0.   ]
+Walltime = 32.651000022888184 Simulated time = 0.04655928203918394
+# 44 	T = 0.0467923	DT = 0.000232981	NI = 1	LI=2	DT_MULT=1.3	dX=[0.004 0.    0.   ]
+Walltime = 32.73900103569031 Simulated time = 0.04679226289040875
+# 45 	T = 0.0470951	DT = 0.000302875	NI = 1	LI=2	DT_MULT=1.3	dX=[0.005 0.    0.   ]
+Walltime = 32.808000326156616 Simulated time = 0.047095137997001
+# 46 	T = 0.0474889	DT = 0.000393738	NI = 1	LI=2	DT_MULT=1.3	dX=[0.006 0.    0.   ]
+Walltime = 32.887999057769775 Simulated time = 0.04748887563557093
+# 47 	T = 0.0480007	DT = 0.000511859	NI = 1	LI=3	DT_MULT=1.3	dX=[0.008 0.    0.   ]
+Walltime = 32.977004289627075 Simulated time = 0.048000734565711835
+# 48 	T = 0.0486662	DT = 0.000665417	NI = 1	LI=2	DT_MULT=1.3	dX=[0.01 0.   0.  ]
+Walltime = 33.045000076293945 Simulated time = 0.04866615117489501
+# 49 	T = 0.0495312	DT = 0.000865042	NI = 1	LI=3	DT_MULT=1.3	dX=[0.013 0.    0.   ]
+Walltime = 33.14799928665161 Simulated time = 0.04953119276683315
+# 50 	T = 0.0506557	DT = 0.00112455	NI = 2	LI=6	DT_MULT=1.3	dX=[0.016 0.    0.   ]
+Walltime = 33.28599977493286 Simulated time = 0.050655746836352725
+# 51 	T = 0.0521177	DT = 0.00146192	NI = 2	LI=4	DT_MULT=1.3	dX=[0.02 0.   0.  ]
+Walltime = 33.42000102996826 Simulated time = 0.05211766712672817
+# 52 	T = 0.0540182	DT = 0.0019005	NI = 2	LI=4	DT_MULT=1.3	dX=[0.024 0.    0.   ]
+Walltime = 33.562999963760376 Simulated time = 0.05401816350421625
+# 53 	T = 0.0564888	DT = 0.00247065	NI = 2	LI=6	DT_MULT=1.3	dX=[0.03 0.   0.  ]
+Walltime = 33.72400259971619 Simulated time = 0.05648880879495076
+# 54 	T = 0.0597006	DT = 0.00321184	NI = 2	LI=7	DT_MULT=1.3	dX=[0.036 0.    0.001]
+Walltime = 33.870999813079834 Simulated time = 0.059700647672905616
+# 55 	T = 0.063876	DT = 0.00417539	NI = 2	LI=6	DT_MULT=1.3	dX=[0.043 0.    0.001]
+Walltime = 34.02199935913086 Simulated time = 0.06387603821424694
+# 56 	T = 0.069304	DT = 0.00542801	NI = 3	LI=9	DT_MULT=1.3	dX=[0.051 0.    0.001]
+Walltime = 34.227999687194824 Simulated time = 0.06930404591799065
+# 57 	T = 0.0763605	DT = 0.00705641	NI = 3	LI=9	DT_MULT=1.3	dX=[0.059 0.    0.001]
+Walltime = 34.433000564575195 Simulated time = 0.07636045593285747
+# 58 	T = 0.0855338	DT = 0.00917333	NI = 3	LI=9	DT_MULT=1.3	dX=[0.068 0.    0.002]
+Walltime = 34.647000551223755 Simulated time = 0.08553378895218433
+# 59 	T = 0.0974591	DT = 0.0119253	NI = 4	LI=15	DT_MULT=1.3	dX=[0.075 0.    0.002]
+Walltime = 34.92799973487854 Simulated time = 0.09745912187730926
+Cut timestep to 0.0119253329
+Walltime = 36.318000078201294 Simulated time = 0.09745912187730926
+Cut timestep to 0.0091733330
+Walltime = 37.75308656692505 Simulated time = 0.09745912187730926
+Cut timestep to 0.0070564100
+Walltime = 39.2690863609314 Simulated time = 0.09745912187730926
+Stationary point detected!
+Cut timestep to 0.0054280077
+Walltime = 39.62008571624756 Simulated time = 0.09745912187730926
+# 60 	T = 0.102887	DT = 0.00542801	NI = 3	LI=10	DT_MULT=1.3	dX=[0.032 0.    0.001]
+Walltime = 39.841086864471436 Simulated time = 0.10288712958105298
+Cut timestep to 0.0054280077
+Walltime = 41.27608585357666 Simulated time = 0.10288712958105298
+Cut timestep to 0.0041753905
+Walltime = 42.63817048072815 Simulated time = 0.10288712958105298
+Cut timestep to 0.0032118389
+Walltime = 44.07817053794861 Simulated time = 0.10288712958105298
+Cut timestep to 0.0024706453
+Walltime = 45.48526215553284 Simulated time = 0.10288712958105298
+Stationary point detected!
+Cut timestep to 0.0019004964
+Walltime = 45.833261251449585 Simulated time = 0.10288712958105298
+# 61 	T = 0.104788	DT = 0.0019005	NI = 3	LI=8	DT_MULT=1.3	dX=[0.011 0.    0.   ]
+Walltime = 46.04826331138611 Simulated time = 0.10478762595854106
+Cut timestep to 0.0019004964
+Walltime = 47.46726417541504 Simulated time = 0.10478762595854106
+Cut timestep to 0.0014619203
+Walltime = 48.84326219558716 Simulated time = 0.10478762595854106
+Cut timestep to 0.0011245541
+Walltime = 50.08126187324524 Simulated time = 0.10478762595854106
+Cut timestep to 0.0008650416
+Walltime = 51.401262521743774 Simulated time = 0.10478762595854106
+Cut timestep to 0.0006654166
+Walltime = 52.716262340545654 Simulated time = 0.10478762595854106
+# 62 	T = 0.105453	DT = 0.000665417	NI = 4	LI=11	DT_MULT=1.3	dX=[0.004 0.    0.   ]
+Walltime = 53.00526213645935 Simulated time = 0.10545304256772424
+Cut timestep to 0.0006654166
+Walltime = 54.33736205101013 Simulated time = 0.10545304256772424
+Stationary point detected!
+Cut timestep to 0.0005118589
+Walltime = 55.284361600875854 Simulated time = 0.10545304256772424
+Stationary point detected!
+Cut timestep to 0.0003937376
+Walltime = 56.43936228752136 Simulated time = 0.10545304256772424
+Stationary point detected!
+Cut timestep to 0.0003028751
+Walltime = 57.26436114311218 Simulated time = 0.10545304256772424
+Stationary point detected!
+Cut timestep to 0.0002329809
+Walltime = 58.38236355781555 Simulated time = 0.10545304256772424
+Cut timestep to 0.0001792160
+Walltime = 59.55336284637451 Simulated time = 0.10545304256772424
+Stationary point detected!
+Cut timestep to 0.0001378585
+Walltime = 60.1323618888855 Simulated time = 0.10545304256772424
+# 63 	T = 0.105591	DT = 0.000137858	NI = 7	LI=17	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 60.557361125946045 Simulated time = 0.10559090105957324
+# 64 	T = 0.10577	DT = 0.000179216	NI = 6	LI=9	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 60.89647698402405 Simulated time = 0.10577011709897693
+# 65 	T = 0.106003	DT = 0.000232981	NI = 2	LI=5	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 61.04047751426697 Simulated time = 0.10600309795020174
+# 66 	T = 0.106306	DT = 0.000302875	NI = 2	LI=5	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 61.200477600097656 Simulated time = 0.106305973056794
+# 67 	T = 0.1067	DT = 0.000393738	NI = 1	LI=2	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 61.29247736930847 Simulated time = 0.10669971069536392
+# 68 	T = 0.107212	DT = 0.000511859	NI = 1	LI=3	DT_MULT=1.3	dX=[0.003 0.    0.   ]
+Walltime = 61.384477615356445 Simulated time = 0.10721156962550484
+# 69 	T = 0.107877	DT = 0.000665417	NI = 1	LI=2	DT_MULT=1.3	dX=[0.004 0.    0.   ]
+Walltime = 61.48647713661194 Simulated time = 0.10787698623468801
+# 70 	T = 0.108742	DT = 0.000865042	NI = 1	LI=3	DT_MULT=1.3	dX=[0.005 0.    0.   ]
+Walltime = 61.57847762107849 Simulated time = 0.10874202782662615
+# 71 	T = 0.109867	DT = 0.00112455	NI = 1	LI=3	DT_MULT=1.3	dX=[0.006 0.    0.   ]
+Walltime = 61.67647838592529 Simulated time = 0.10986658189614572
+# 72 	T = 0.111329	DT = 0.00146192	NI = 1	LI=2	DT_MULT=1.3	dX=[0.008 0.    0.   ]
+Walltime = 61.77347803115845 Simulated time = 0.11132850218652117
+# 73 	T = 0.113229	DT = 0.0019005	NI = 2	LI=4	DT_MULT=1.3	dX=[0.01 0.   0.  ]
+Walltime = 61.92047715187073 Simulated time = 0.11322899856400925
+# 74 	T = 0.1157	DT = 0.00247065	NI = 2	LI=6	DT_MULT=1.3	dX=[0.012 0.    0.   ]
+Walltime = 62.094478607177734 Simulated time = 0.11569964385474375
+# 75 	T = 0.118911	DT = 0.00321184	NI = 2	LI=7	DT_MULT=1.3	dX=[0.016 0.    0.001]
+Walltime = 62.253477811813354 Simulated time = 0.11891148273269861
+# 76 	T = 0.123087	DT = 0.00417539	NI = 2	LI=6	DT_MULT=1.3	dX=[0.019 0.    0.001]
+Walltime = 62.41747760772705 Simulated time = 0.12308687327403993
+# 77 	T = 0.128515	DT = 0.00542801	NI = 2	LI=6	DT_MULT=1.3	dX=[0.024 0.    0.001]
+Walltime = 62.572476625442505 Simulated time = 0.12851488097778363
+# 78 	T = 0.135571	DT = 0.00705641	NI = 2	LI=6	DT_MULT=1.3	dX=[0.029 0.    0.001]
+Walltime = 62.72648000717163 Simulated time = 0.13557129099265045
+# 79 	T = 0.144745	DT = 0.00917333	NI = 2	LI=6	DT_MULT=1.3	dX=[0.034 0.    0.001]
+Walltime = 62.88247799873352 Simulated time = 0.14474462401197732
+# 80 	T = 0.15667	DT = 0.0119253	NI = 2	LI=6	DT_MULT=1.3	dX=[0.04  0.    0.002]
+Walltime = 63.057477712631226 Simulated time = 0.15666995693710226
+Cut timestep to 0.0119253329
+Walltime = 64.51347732543945 Simulated time = 0.15666995693710226
+Stationary point detected!
+Cut timestep to 0.0091733330
+Walltime = 65.31647729873657 Simulated time = 0.15666995693710226
+# 81 	T = 0.165843	DT = 0.00917333	NI = 2	LI=6	DT_MULT=1.3	dX=[0.028 0.    0.001]
+Walltime = 65.46547746658325 Simulated time = 0.16584328995642914
+Cut timestep to 0.0091733330
+Walltime = 66.822580575943 Simulated time = 0.16584328995642914
+Cut timestep to 0.0070564100
+Walltime = 68.26358079910278 Simulated time = 0.16584328995642914
+Cut timestep to 0.0054280077
+Walltime = 69.50471615791321 Simulated time = 0.16584328995642914
+Cut timestep to 0.0041753905
+Walltime = 70.71971607208252 Simulated time = 0.16584328995642914
+# 82 	T = 0.170019	DT = 0.00417539	NI = 19	LI=61	DT_MULT=1.3	dX=[0.012 0.    0.001]
+Walltime = 71.91471672058105 Simulated time = 0.17001868049777044
+# 83 	T = 0.175447	DT = 0.00542801	NI = 2	LI=6	DT_MULT=1.3	dX=[0.016 0.    0.001]
+Walltime = 72.05471658706665 Simulated time = 0.17544668820151416
+# 84 	T = 0.182503	DT = 0.00705641	NI = 2	LI=6	DT_MULT=1.3	dX=[0.019 0.    0.001]
+Walltime = 72.22071671485901 Simulated time = 0.18250309821638097
+# 85 	T = 0.191676	DT = 0.00917333	NI = 2	LI=6	DT_MULT=1.3	dX=[0.023 0.    0.001]
+Walltime = 72.37171578407288 Simulated time = 0.19167643123570785
+# 86 	T = 0.203602	DT = 0.0119253	NI = 3	LI=9	DT_MULT=1.3	dX=[0.028 0.    0.001]
+Walltime = 72.5837173461914 Simulated time = 0.20360176416083278
+Cut timestep to 0.0119253329
+Walltime = 73.99971580505371 Simulated time = 0.20360176416083278
+Cut timestep to 0.0091733330
+Walltime = 75.26671576499939 Simulated time = 0.20360176416083278
+Cut timestep to 0.0070564100
+Walltime = 76.50671577453613 Simulated time = 0.20360176416083278
+# 87 	T = 0.210658	DT = 0.00705641	NI = 7	LI=25	DT_MULT=1.3	dX=[0.016 0.    0.001]
+Walltime = 76.96171522140503 Simulated time = 0.2106581741756996
+Cut timestep to 0.0070564100
+Walltime = 78.20771598815918 Simulated time = 0.2106581741756996
+Cut timestep to 0.0054280077
+Walltime = 79.38771533966064 Simulated time = 0.2106581741756996
+Cut timestep to 0.0041753905
+Walltime = 80.49371576309204 Simulated time = 0.2106581741756996
+Cut timestep to 0.0032118389
+Walltime = 81.6137158870697 Simulated time = 0.2106581741756996
+Cut timestep to 0.0024706453
+Walltime = 82.71871614456177 Simulated time = 0.2106581741756996
+Cut timestep to 0.0019004964
+Walltime = 83.831716299057 Simulated time = 0.2106581741756996
+# 88 	T = 0.212559	DT = 0.0019005	NI = 18	LI=38	DT_MULT=1.3	dX=[0.004 0.    0.   ]
+Walltime = 84.76571726799011 Simulated time = 0.21255867055318767
+Cut timestep to 0.0019004964
+Walltime = 85.93971657752991 Simulated time = 0.21255867055318767
+Cut timestep to 0.0014619203
+Walltime = 86.94379949569702 Simulated time = 0.21255867055318767
+Cut timestep to 0.0011245541
+Walltime = 88.00779962539673 Simulated time = 0.21255867055318767
+# 89 	T = 0.213683	DT = 0.00112455	NI = 8	LI=25	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 88.50480031967163 Simulated time = 0.21368322462270725
+# 90 	T = 0.215145	DT = 0.00146192	NI = 2	LI=4	DT_MULT=1.3	dX=[0.003 0.    0.   ]
+Walltime = 88.63879919052124 Simulated time = 0.2151451449130827
+# 91 	T = 0.217046	DT = 0.0019005	NI = 2	LI=4	DT_MULT=1.3	dX=[0.004 0.    0.   ]
+Walltime = 88.77180004119873 Simulated time = 0.21704564129057077
+# 92 	T = 0.219516	DT = 0.00247065	NI = 2	LI=6	DT_MULT=1.3	dX=[0.005 0.    0.   ]
+Walltime = 88.9028000831604 Simulated time = 0.2195162865813053
+# 93 	T = 0.222728	DT = 0.00321184	NI = 2	LI=5	DT_MULT=1.3	dX=[0.007 0.    0.   ]
+Walltime = 89.0618007183075 Simulated time = 0.22272812545926016
+# 94 	T = 0.226904	DT = 0.00417539	NI = 3	LI=9	DT_MULT=1.3	dX=[0.009 0.    0.001]
+Walltime = 89.26979947090149 Simulated time = 0.22690351600060146
+# 95 	T = 0.232332	DT = 0.00542801	NI = 3	LI=7	DT_MULT=1.3	dX=[0.011 0.    0.001]
+Walltime = 89.47080039978027 Simulated time = 0.23233152370434518
+# 96 	T = 0.239388	DT = 0.00705641	NI = 2	LI=5	DT_MULT=1.3	dX=[0.013 0.    0.001]
+Walltime = 89.62179923057556 Simulated time = 0.239387933719212
+# 97 	T = 0.248561	DT = 0.00917333	NI = 2	LI=6	DT_MULT=1.3	dX=[0.017 0.    0.001]
+Walltime = 89.79779982566833 Simulated time = 0.24856126673853887
+# 98 	T = 0.260487	DT = 0.0119253	NI = 2	LI=6	DT_MULT=1.3	dX=[0.02  0.    0.001]
+Walltime = 89.95779967308044 Simulated time = 0.2604865996636638
+# 99 	T = 0.27599	DT = 0.0155029	NI = 3	LI=12	DT_MULT=1.3	dX=[0.025 0.    0.002]
+Walltime = 90.18991112709045 Simulated time = 0.2759895324663262
+# 100 	T = 0.296143	DT = 0.0201538	NI = 3	LI=11	DT_MULT=1.3	dX=[0.029 0.    0.002]
+Walltime = 90.40891122817993 Simulated time = 0.2961433451097873
+Cut timestep to 0.0201538126
+Walltime = 91.83998703956604 Simulated time = 0.2961433451097873
+Cut timestep to 0.0155029328
+Walltime = 93.67898797988892 Simulated time = 0.2961433451097873
+Stationary point detected!
+Cut timestep to 0.0119253329
+Walltime = 94.17298769950867 Simulated time = 0.2961433451097873
+# 101 	T = 0.308069	DT = 0.0119253	NI = 4	LI=15	DT_MULT=1.3	dX=[0.016 0.    0.001]
+Walltime = 94.44398736953735 Simulated time = 0.3080686780349122
+Cut timestep to 0.0119253329
+Walltime = 95.82398724555969 Simulated time = 0.3080686780349122
+Cut timestep to 0.0091733330
+Walltime = 97.51598763465881 Simulated time = 0.3080686780349122
+Stationary point detected!
+Cut timestep to 0.0070564100
+Walltime = 98.02098751068115 Simulated time = 0.3080686780349122
+Stationary point detected!
+Cut timestep to 0.0054280077
+Walltime = 98.51998782157898 Simulated time = 0.3080686780349122
+Stationary point detected!
+Cut timestep to 0.0041753905
+Walltime = 98.96398711204529 Simulated time = 0.3080686780349122
+# 102 	T = 0.312244	DT = 0.00417539	NI = 4	LI=14	DT_MULT=1.3	dX=[0.006 0.    0.   ]
+Walltime = 99.20998764038086 Simulated time = 0.31224406857625353
+Cut timestep to 0.0041753905
+Walltime = 100.44606137275696 Simulated time = 0.31224406857625353
+Cut timestep to 0.0032118389
+Walltime = 101.61506056785583 Simulated time = 0.31224406857625353
+Cut timestep to 0.0024706453
+Walltime = 102.87406039237976 Simulated time = 0.31224406857625353
+Cut timestep to 0.0019004964
+Walltime = 104.11306071281433 Simulated time = 0.31224406857625353
+Cut timestep to 0.0014619203
+Walltime = 105.22806072235107 Simulated time = 0.31224406857625353
+Cut timestep to 0.0011245541
+Walltime = 106.31606149673462 Simulated time = 0.31224406857625353
+Cut timestep to 0.0008650416
+Walltime = 107.4790608882904 Simulated time = 0.31224406857625353
+# 103 	T = 0.313109	DT = 0.000865042	NI = 4	LI=15	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 107.74706172943115 Simulated time = 0.31310911016819165
+# 104 	T = 0.314234	DT = 0.00112455	NI = 5	LI=19	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 108.05806064605713 Simulated time = 0.3142336642377112
+# 105 	T = 0.315696	DT = 0.00146192	NI = 2	LI=5	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 108.18506073951721 Simulated time = 0.31569558452808666
+# 106 	T = 0.317596	DT = 0.0019005	NI = 2	LI=5	DT_MULT=1.3	dX=[0.003 0.    0.   ]
+Walltime = 108.33106112480164 Simulated time = 0.31759608090557473
+# 107 	T = 0.320067	DT = 0.00247065	NI = 2	LI=6	DT_MULT=1.3	dX=[0.003 0.    0.   ]
+Walltime = 108.46906185150146 Simulated time = 0.3200667261963092
+# 108 	T = 0.323279	DT = 0.00321184	NI = 2	LI=7	DT_MULT=1.3	dX=[0.004 0.    0.   ]
+Walltime = 108.62306118011475 Simulated time = 0.32327856507426406
+# 109 	T = 0.327454	DT = 0.00417539	NI = 2	LI=6	DT_MULT=1.3	dX=[0.005 0.    0.   ]
+Walltime = 108.76106119155884 Simulated time = 0.32745395561560536
+# 110 	T = 0.332882	DT = 0.00542801	NI = 2	LI=6	DT_MULT=1.3	dX=[0.007 0.    0.001]
+Walltime = 108.91506099700928 Simulated time = 0.33288196331934905
+# 111 	T = 0.339938	DT = 0.00705641	NI = 2	LI=6	DT_MULT=1.3	dX=[0.008 0.    0.001]
+Walltime = 109.06206059455872 Simulated time = 0.3399383733342159
+# 112 	T = 0.349112	DT = 0.00917333	NI = 1	LI=3	DT_MULT=1.3	dX=[0.011 0.    0.001]
+Walltime = 109.15406465530396 Simulated time = 0.3491117063535428
+# 113 	T = 0.361037	DT = 0.0119253	NI = 2	LI=6	DT_MULT=1.3	dX=[0.013 0.    0.001]
+Walltime = 109.30106043815613 Simulated time = 0.3610370392786677
+# 114 	T = 0.37654	DT = 0.0155029	NI = 2	LI=7	DT_MULT=1.3	dX=[0.016 0.    0.002]
+Walltime = 109.46406078338623 Simulated time = 0.3765399720813301
+# 115 	T = 0.396694	DT = 0.0201538	NI = 2	LI=8	DT_MULT=1.3	dX=[0.02  0.    0.002]
+Walltime = 109.6240599155426 Simulated time = 0.3966937847247912
+# 116 	T = 0.422894	DT = 0.0262	NI = 2	LI=7	DT_MULT=1.3	dX=[0.023 0.    0.003]
+Walltime = 109.81306052207947 Simulated time = 0.4228937411612907
+# 117 	T = 0.456954	DT = 0.0340599	NI = 2	LI=8	DT_MULT=1.3	dX=[0.027 0.    0.004]
+Walltime = 109.9670615196228 Simulated time = 0.45695368452874
+# 118 	T = 0.501232	DT = 0.0442779	NI = 2	LI=8	DT_MULT=1.3	dX=[0.031 0.    0.005]
+Walltime = 110.14606070518494 Simulated time = 0.5012316109064241
+# 119 	T = 0.558793	DT = 0.0575613	NI = 2	LI=8	DT_MULT=1.3	dX=[0.034 0.    0.007]
+Walltime = 110.3350613117218 Simulated time = 0.5587929151974135
+# 120 	T = 0.633623	DT = 0.0748297	NI = 2	LI=8	DT_MULT=1.3	dX=[0.037 0.001 0.009]
+Walltime = 110.52606105804443 Simulated time = 0.6336226107756996
+# 121 	T = 0.730901	DT = 0.0972786	NI = 2	LI=8	DT_MULT=1.3	dX=[0.037 0.001 0.011]
+Walltime = 110.69906187057495 Simulated time = 0.7309012150274716
+# 122 	T = 0.857363	DT = 0.126462	NI = 4	LI=19	DT_MULT=1.3	dX=[0.036 0.001 0.015]
+Walltime = 111.03906083106995 Simulated time = 0.8573634005547752
+# 123 	T = 1.02176	DT = 0.164401	NI = 4	LI=20	DT_MULT=1.3	dX=[0.032 0.001 0.019]
+Walltime = 111.37306022644043 Simulated time = 1.02176424174027
+# 124 	T = 1.23549	DT = 0.213721	NI = 4	LI=20	DT_MULT=1.3	dX=[0.026 0.002 0.026]
+Walltime = 111.7420608997345 Simulated time = 1.235485335281413
+Cut timestep to 0.2137210935
+Walltime = 119.79100680351257 Simulated time = 1.235485335281413
+Stationary point detected!
+Cut timestep to 0.1644008412
+Walltime = 120.43700695037842 Simulated time = 1.235485335281413
+Stationary point detected!
+Cut timestep to 0.1264621855
+Walltime = 120.86700701713562 Simulated time = 1.235485335281413
+Cut timestep to 0.0972786043
+Walltime = 122.23707866668701 Simulated time = 1.235485335281413
+Stationary point detected!
+Cut timestep to 0.0748296956
+Walltime = 122.90608048439026 Simulated time = 1.235485335281413
+Stationary point detected!
+Cut timestep to 0.0575613043
+Walltime = 123.715078830719 Simulated time = 1.235485335281413
+Stationary point detected!
+Cut timestep to 0.0442779264
+Walltime = 124.24716973304749 Simulated time = 1.235485335281413
+Stationary point detected!
+Cut timestep to 0.0340599434
+Walltime = 124.76416563987732 Simulated time = 1.235485335281413
+Stationary point detected!
+Cut timestep to 0.0261999564
+Walltime = 125.26416516304016 Simulated time = 1.235485335281413
+# 125 	T = 1.26169	DT = 0.0262	NI = 2	LI=7	DT_MULT=1.3	dX=[0.003 0.    0.003]
+Walltime = 125.399165391922 Simulated time = 1.2616852917179124
+Stationary point detected!
+Cut timestep to 0.0261999564
+Walltime = 125.88316512107849 Simulated time = 1.2616852917179124
+Stationary point detected!
+Cut timestep to 0.0201538126
+Walltime = 126.40016555786133 Simulated time = 1.2616852917179124
+Stationary point detected!
+Cut timestep to 0.0155029328
+Walltime = 126.89816617965698 Simulated time = 1.2616852917179124
+Stationary point detected!
+Cut timestep to 0.0119253329
+Walltime = 127.41516518592834 Simulated time = 1.2616852917179124
+Stationary point detected!
+Cut timestep to 0.0091733330
+Walltime = 127.94516634941101 Simulated time = 1.2616852917179124
+Stationary point detected!
+Cut timestep to 0.0070564100
+Walltime = 128.50116562843323 Simulated time = 1.2616852917179124
+# 126 	T = 1.26874	DT = 0.00705641	NI = 5	LI=19	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 128.85316562652588 Simulated time = 1.2687417017327793
+# 127 	T = 1.27792	DT = 0.00917333	NI = 5	LI=18	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 129.17916536331177 Simulated time = 1.2779150347521062
+# 128 	T = 1.28984	DT = 0.0119253	NI = 5	LI=18	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 129.53016543388367 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0119253329
+Walltime = 130.03716492652893 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0091733330
+Walltime = 130.54516530036926 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0070564100
+Walltime = 131.07816576957703 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0054280077
+Walltime = 131.6731662750244 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0041753905
+Walltime = 132.14016461372375 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0032118389
+Walltime = 132.66416454315186 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0024706453
+Walltime = 133.18616485595703 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0019004964
+Walltime = 133.72016525268555 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0014619203
+Walltime = 134.2371666431427 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0011245541
+Walltime = 134.73616528511047 Simulated time = 1.2898403676772312
+Stationary point detected!
+Cut timestep to 0.0008650416
+Walltime = 135.26216673851013 Simulated time = 1.2898403676772312
+# 129 	T = 1.29071	DT = 0.000865042	NI = 12	LI=38	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 135.98716473579407 Simulated time = 1.2907054092691694
+# 130 	T = 1.29183	DT = 0.00112455	NI = 1	LI=1	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 136.05616569519043 Simulated time = 1.291829963338689
+# 131 	T = 1.29329	DT = 0.00146192	NI = 1	LI=1	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 136.1301658153534 Simulated time = 1.2932918836290643
+# 132 	T = 1.29519	DT = 0.0019005	NI = 1	LI=2	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 136.20816683769226 Simulated time = 1.2951923800065523
+# 133 	T = 1.29766	DT = 0.00247065	NI = 1	LI=3	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 136.3071653842926 Simulated time = 1.297663025297287
+# 134 	T = 1.30087	DT = 0.00321184	NI = 1	LI=3	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 136.39216542243958 Simulated time = 1.300874864175242
+# 135 	T = 1.30505	DT = 0.00417539	NI = 1	LI=2	DT_MULT=1.3	dX=[0.    0.    0.001]
+Walltime = 136.49116611480713 Simulated time = 1.3050502547165832
+# 136 	T = 1.31048	DT = 0.00542801	NI = 1	LI=2	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 136.57716584205627 Simulated time = 1.3104782624203268
+# 137 	T = 1.31753	DT = 0.00705641	NI = 1	LI=3	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 136.6741645336151 Simulated time = 1.3175346724351937
+# 138 	T = 1.32671	DT = 0.00917333	NI = 1	LI=3	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 136.79016709327698 Simulated time = 1.3267080054545206
+# 139 	T = 1.33863	DT = 0.0119253	NI = 1	LI=3	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 136.87516522407532 Simulated time = 1.3386333383796456
+# 140 	T = 1.35414	DT = 0.0155029	NI = 2	LI=6	DT_MULT=1.3	dX=[0.001 0.    0.002]
+Walltime = 137.03316736221313 Simulated time = 1.354136271182308
+# 141 	T = 1.37429	DT = 0.0201538	NI = 2	LI=7	DT_MULT=1.3	dX=[0.002 0.    0.002]
+Walltime = 137.21016550064087 Simulated time = 1.374290083825769
+# 142 	T = 1.40049	DT = 0.0262	NI = 2	LI=7	DT_MULT=1.3	dX=[0.002 0.    0.003]
+Walltime = 137.3811662197113 Simulated time = 1.4004900402622684
+# 143 	T = 1.43455	DT = 0.0340599	NI = 2	LI=7	DT_MULT=1.3	dX=[0.003 0.    0.004]
+Walltime = 137.534166097641 Simulated time = 1.4345499836297178
+# 144 	T = 1.47883	DT = 0.0442779	NI = 9	LI=42	DT_MULT=1.3	dX=[0.003 0.    0.005]
+Walltime = 138.22816562652588 Simulated time = 1.4788279100074018
+# 145 	T = 1.53639	DT = 0.0575613	NI = 3	LI=14	DT_MULT=1.3	dX=[0.003 0.    0.007]
+Walltime = 138.45916509628296 Simulated time = 1.536389214298391
+# 146 	T = 1.61122	DT = 0.0748297	NI = 2	LI=8	DT_MULT=1.3	dX=[0.004 0.001 0.009]
+Walltime = 138.61616492271423 Simulated time = 1.6112189098766772
+# 147 	T = 1.7085	DT = 0.0972786	NI = 2	LI=8	DT_MULT=1.3	dX=[0.004 0.001 0.012]
+Walltime = 138.80616545677185 Simulated time = 1.708497514128449
+# 148 	T = 1.83496	DT = 0.126462	NI = 4	LI=14	DT_MULT=1.3	dX=[0.004 0.001 0.016]
+Walltime = 139.10416626930237 Simulated time = 1.8349596996557527
+Stationary point detected!
+Cut timestep to 0.1264621855
+Walltime = 140.30516600608826 Simulated time = 1.8349596996557527
+# 149 	T = 1.96142	DT = 0.126462	NI = 2	LI=9	DT_MULT=1.3	dX=[0.004 0.001 0.016]
+Walltime = 140.4562668800354 Simulated time = 1.9614218851830563
+Stationary point detected!
+Cut timestep to 0.1264621855
+Walltime = 141.26826739311218 Simulated time = 1.9614218851830563
+# 150 	T = 2.08788	DT = 0.126462	NI = 3	LI=14	DT_MULT=1.3	dX=[0.003 0.001 0.016]
+Walltime = 141.4812672138214 Simulated time = 2.08788407071036
+# 151 	T = 2.25228	DT = 0.164401	NI = 2	LI=9	DT_MULT=1.3	dX=[0.004 0.001 0.021]
+Walltime = 141.67126846313477 Simulated time = 2.252284911895855
+# 152 	T = 2.46601	DT = 0.213721	NI = 3	LI=14	DT_MULT=1.3	dX=[0.005 0.002 0.028]
+Walltime = 141.95526719093323 Simulated time = 2.466006005436998
+# 153 	T = 2.74384	DT = 0.277837	NI = 2	LI=11	DT_MULT=1.3	dX=[0.007 0.002 0.036]
+Walltime = 142.20726680755615 Simulated time = 2.7438434270404843
+# 154 	T = 3.10503	DT = 0.361189	NI = 4	LI=26	DT_MULT=1.3	dX=[0.425 0.002 0.037]
+Walltime = 142.6112675666809 Simulated time = 3.1050320751250164
+# 155 	T = 3.57458	DT = 0.469545	NI = 5	LI=26	DT_MULT=1.3	dX=[0.426 0.002 0.04 ]
+Walltime = 143.07826828956604 Simulated time = 3.5745773176349083
+# 156 	T = 4.18499	DT = 0.610409	NI = 5	LI=31	DT_MULT=1.3	dX=[0.386 0.003 0.045]
+Walltime = 143.59826731681824 Simulated time = 4.184986132897768
+Cut timestep to 0.6104088153
+Walltime = 145.12726712226868 Simulated time = 4.184986132897768
+Cut timestep to 0.4695452425
+Walltime = 146.6622679233551 Simulated time = 4.184986132897768
+Cut timestep to 0.3611886481
+Walltime = 148.07826805114746 Simulated time = 4.184986132897768
+# 157 	T = 4.54617	DT = 0.361189	NI = 5	LI=27	DT_MULT=1.3	dX=[0.298 0.001 0.024]
+Walltime = 148.47126746177673 Simulated time = 4.5461747809823
+# 158 	T = 5.01572	DT = 0.469545	NI = 4	LI=21	DT_MULT=1.3	dX=[0.222 0.002 0.027]
+Walltime = 148.80426812171936 Simulated time = 5.015720023492191
+# 159 	T = 5.62613	DT = 0.610409	NI = 8	LI=34	DT_MULT=1.3	dX=[0.221 0.002 0.031]
+Walltime = 149.4493429660797 Simulated time = 5.626128838755051
+Stationary point detected!
+Cut timestep to 0.6104088153
+Walltime = 150.75334286689758 Simulated time = 5.626128838755051
+# 160 	T = 6.23654	DT = 0.610409	NI = 11	LI=41	DT_MULT=1.3	dX=[0.185 0.003 0.027]
+Walltime = 151.48834347724915 Simulated time = 6.23653765401791
+# 161 	T = 7.03007	DT = 0.793531	NI = 7	LI=29	DT_MULT=1.3	dX=[0.164 0.003 0.031]
+Walltime = 152.02734303474426 Simulated time = 7.030069113859627
+# 162 	T = 8.06166	DT = 1.03159	NI = 7	LI=26	DT_MULT=1.3	dX=[0.157 0.004 0.036]
+Walltime = 152.6213436126709 Simulated time = 8.061660011653858
+# 163 	T = 9.40273	DT = 1.34107	NI = 4	LI=22	DT_MULT=1.3	dX=[0.133 0.006 0.037]
+Walltime = 153.07242393493652 Simulated time = 9.40272817878636
+# 164 	T = 11.1461	DT = 1.74339	NI = 4	LI=21	DT_MULT=1.3	dX=[0.108 0.007 0.04 ]
+Walltime = 153.52842450141907 Simulated time = 11.146116796058612
+# 165 	T = 13.4125	DT = 2.26641	NI = 4	LI=22	DT_MULT=1.3	dX=[0.082 0.009 0.041]
+Walltime = 154.00842428207397 Simulated time = 13.41252199851254
+# 166 	T = 16.3588	DT = 2.94633	NI = 5	LI=25	DT_MULT=1.3	dX=[0.078 0.011 0.041]
+Walltime = 154.53742361068726 Simulated time = 16.358848761702646
+Cut timestep to 2.9463267632
+Walltime = 156.27442407608032 Simulated time = 16.358848761702646
+Cut timestep to 2.2664052025
+Walltime = 179.03074264526367 Simulated time = 16.358848761702646
+Cut timestep to 1.7433886173
+Walltime = 188.33721590042114 Simulated time = 16.358848761702646
+Cut timestep to 1.3410681671
+Walltime = 190.29962801933289 Simulated time = 16.358848761702646
+Cut timestep to 1.0315908978
+Walltime = 191.41836142539978 Simulated time = 16.358848761702646
+Cut timestep to 0.7935314598
+Walltime = 192.48199677467346 Simulated time = 16.358848761702646
+Cut timestep to 0.6104088153
+Walltime = 193.6616096496582 Simulated time = 16.358848761702646
+Cut timestep to 0.4695452425
+Walltime = 194.8468520641327 Simulated time = 16.358848761702646
+Cut timestep to 0.3611886481
+Walltime = 195.9769537448883 Simulated time = 16.358848761702646
+Cut timestep to 0.2778374216
+Walltime = 197.12172555923462 Simulated time = 16.358848761702646
+Cut timestep to 0.2137210935
+Walltime = 198.19918370246887 Simulated time = 16.358848761702646
+Cut timestep to 0.1644008412
+Walltime = 199.2441475391388 Simulated time = 16.358848761702646
+Cut timestep to 0.1264621855
+Walltime = 200.2511374950409 Simulated time = 16.358848761702646
+Cut timestep to 0.0972786043
+Walltime = 201.24990916252136 Simulated time = 16.358848761702646
+Cut timestep to 0.0748296956
+Walltime = 202.49913811683655 Simulated time = 16.358848761702646
+Cut timestep to 0.0575613043
+Walltime = 203.44120693206787 Simulated time = 16.358848761702646
+Cut timestep to 0.0442779264
+Walltime = 204.3514165878296 Simulated time = 16.358848761702646
+Cut timestep to 0.0340599434
+Walltime = 205.2568073272705 Simulated time = 16.358848761702646
+Cut timestep to 0.0261999564
+Walltime = 206.12857937812805 Simulated time = 16.358848761702646
+Cut timestep to 0.0201538126
+Walltime = 206.9867684841156 Simulated time = 16.358848761702646
+# 167 	T = 16.379	DT = 0.0201538	NI = 4	LI=12	DT_MULT=1.3	dX=[0.036 0.    0.   ]
+Walltime = 207.1668541431427 Simulated time = 16.379002574346107
+Cut timestep to 0.0201538126
+Walltime = 208.06965279579163 Simulated time = 16.379002574346107
+Cut timestep to 0.0155029328
+Walltime = 208.91683101654053 Simulated time = 16.379002574346107
+Cut timestep to 0.0119253329
+Walltime = 209.7418429851532 Simulated time = 16.379002574346107
+# 168 	T = 16.3909	DT = 0.0119253	NI = 3	LI=6	DT_MULT=1.3	dX=[0.005 0.    0.   ]
+Walltime = 209.87036561965942 Simulated time = 16.39092790727123
+Cut timestep to 0.0119253329
+Walltime = 210.714679479599 Simulated time = 16.39092790727123
+# 169 	T = 16.4029	DT = 0.0119253	NI = 3	LI=6	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 210.84121179580688 Simulated time = 16.402853240196354
+# 170 	T = 16.4184	DT = 0.0155029	NI = 2	LI=4	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 210.9412124156952 Simulated time = 16.418356172999015
+# 171 	T = 16.4385	DT = 0.0201538	NI = 2	LI=4	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 211.0502119064331 Simulated time = 16.438509985642476
+# 172 	T = 16.4647	DT = 0.0262	NI = 3	LI=7	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 211.2055103778839 Simulated time = 16.464709942078976
+# 173 	T = 16.4988	DT = 0.0340599	NI = 3	LI=7	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 211.3441252708435 Simulated time = 16.498769885446425
+# 174 	T = 16.543	DT = 0.0442779	NI = 3	LI=8	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 211.4977457523346 Simulated time = 16.54304781182411
+# 175 	T = 16.6006	DT = 0.0575613	NI = 3	LI=8	DT_MULT=1.3	dX=[0.002 0.    0.001]
+Walltime = 211.639746427536 Simulated time = 16.6006091161151
+# 176 	T = 16.6754	DT = 0.0748297	NI = 3	LI=9	DT_MULT=1.3	dX=[0.002 0.    0.001]
+Walltime = 211.80115938186646 Simulated time = 16.675438811693386
+# 177 	T = 16.7727	DT = 0.0972786	NI = 3	LI=10	DT_MULT=1.3	dX=[0.003 0.    0.001]
+Walltime = 211.94822597503662 Simulated time = 16.77271741594516
+# 178 	T = 16.8992	DT = 0.126462	NI = 4	LI=15	DT_MULT=1.3	dX=[0.004 0.001 0.002]
+Walltime = 212.16059947013855 Simulated time = 16.89917960147246
+Cut timestep to 0.1264621855
+Walltime = 213.11518597602844 Simulated time = 16.89917960147246
+Stationary point detected!
+Cut timestep to 0.0972786043
+Walltime = 213.36769366264343 Simulated time = 16.89917960147246
+Stationary point detected!
+Cut timestep to 0.0748296956
+Walltime = 213.61576533317566 Simulated time = 16.89917960147246
+# 179 	T = 16.974	DT = 0.0748297	NI = 3	LI=11	DT_MULT=1.3	dX=[0.002 0.    0.001]
+Walltime = 213.7553789615631 Simulated time = 16.97400929705075
+# 180 	T = 17.0713	DT = 0.0972786	NI = 3	LI=11	DT_MULT=1.3	dX=[0.003 0.    0.001]
+Walltime = 213.9223849773407 Simulated time = 17.071287901302522
+# 181 	T = 17.1978	DT = 0.126462	NI = 6	LI=27	DT_MULT=1.3	dX=[0.004 0.001 0.002]
+Walltime = 214.20670771598816 Simulated time = 17.197750086829824
+# 182 	T = 17.3622	DT = 0.164401	NI = 4	LI=16	DT_MULT=1.3	dX=[0.005 0.001 0.002]
+Walltime = 214.3917076587677 Simulated time = 17.362150928015318
+# 183 	T = 17.5759	DT = 0.213721	NI = 4	LI=16	DT_MULT=1.3	dX=[0.007 0.001 0.003]
+Walltime = 214.5970516204834 Simulated time = 17.57587202155646
+Cut timestep to 0.2137210935
+Walltime = 215.50515460968018 Simulated time = 17.57587202155646
+# 184 	T = 17.7896	DT = 0.213721	NI = 5	LI=20	DT_MULT=1.3	dX=[0.007 0.001 0.003]
+Walltime = 215.73771977424622 Simulated time = 17.789593115097603
+# 185 	T = 18.0674	DT = 0.277837	NI = 2	LI=8	DT_MULT=1.3	dX=[0.009 0.001 0.004]
+Walltime = 215.8424210548401 Simulated time = 18.06743053670109
+# 186 	T = 18.4286	DT = 0.361189	NI = 2	LI=9	DT_MULT=1.3	dX=[0.012 0.001 0.005]
+Walltime = 215.95182538032532 Simulated time = 18.42861918478562
+# 187 	T = 18.8982	DT = 0.469545	NI = 3	LI=14	DT_MULT=1.3	dX=[0.015 0.002 0.005]
+Walltime = 216.1068353652954 Simulated time = 18.898164427295512
+# 188 	T = 19.5086	DT = 0.610409	NI = 2	LI=9	DT_MULT=1.3	dX=[0.02  0.002 0.006]
+Walltime = 216.22745156288147 Simulated time = 19.50857324255837
+# 189 	T = 20.3021	DT = 0.793531	NI = 3	LI=15	DT_MULT=1.3	dX=[0.026 0.003 0.008]
+Walltime = 216.3981671333313 Simulated time = 20.302104702400086
+# 190 	T = 21.3337	DT = 1.03159	NI = 2	LI=9	DT_MULT=1.3	dX=[0.033 0.004 0.01 ]
+Walltime = 216.61981916427612 Simulated time = 21.333695600194318
+# 191 	T = 22.6748	DT = 1.34107	NI = 2	LI=14	DT_MULT=1.3	dX=[0.043 0.005 0.015]
+Walltime = 216.88870763778687 Simulated time = 22.67476376732682
+# 192 	T = 24.4182	DT = 1.74339	NI = 3	LI=17	DT_MULT=1.3	dX=[0.053 0.006 0.022]
+Walltime = 217.21001982688904 Simulated time = 24.418152384599072
+# 193 	T = 26.6846	DT = 2.26641	NI = 3	LI=19	DT_MULT=1.3	dX=[0.065 0.008 0.033]
+Walltime = 217.5488245487213 Simulated time = 26.684557587053
+# 194 	T = 29.6309	DT = 2.94633	NI = 3	LI=24	DT_MULT=1.3	dX=[0.078 0.01  0.05 ]
+Walltime = 217.92547965049744 Simulated time = 29.630884350243107
+# 195 	T = 33.4611	DT = 3.83022	NI = 3	LI=18	DT_MULT=1.3	dX=[0.09  0.012 0.077]
+Walltime = 218.30390167236328 Simulated time = 33.46110914239025
+# 196 	T = 38.4404	DT = 4.97929	NI = 3	LI=20	DT_MULT=1.3	dX=[0.226 0.015 0.081]
+Walltime = 218.72474813461304 Simulated time = 38.440401372181526
+# 197 	T = 44.9135	DT = 6.47308	NI = 3	LI=18	DT_MULT=1.3	dX=[0.376 0.018 0.093]
+Walltime = 219.17276334762573 Simulated time = 44.91348127091019
+# 198 	T = 53.3285	DT = 8.415	NI = 3	LI=19	DT_MULT=1.3	dX=[0.483 0.02  0.096]
+Walltime = 219.67220425605774 Simulated time = 53.32848513925745
+# 199 	T = 63.3285	DT = 10	NI = 3	LI=20	DT_MULT=1.3	dX=[0.374 0.022 0.102]
+Walltime = 220.23666310310364 Simulated time = 63.32848513925745
+Cut timestep to 7.6923076923
+Walltime = 221.90731620788574 Simulated time = 63.32848513925745
+Cut timestep to 5.9171597633
+Walltime = 234.55707478523254 Simulated time = 63.32848513925745
+Cut timestep to 4.5516613564
+Walltime = 235.75353455543518 Simulated time = 63.32848513925745
+Cut timestep to 3.5012779665
+Walltime = 236.9460506439209 Simulated time = 63.32848513925745
+Cut timestep to 2.6932907434
+Walltime = 238.09619641304016 Simulated time = 63.32848513925745
+# 200 	T = 66.0218	DT = 2.69329	NI = 3	LI=20	DT_MULT=1.3	dX=[0.164 0.006 0.027]
+Walltime = 238.3232626914978 Simulated time = 66.0217758826865
+# 201 	T = 69.5231	DT = 3.50128	NI = 3	LI=16	DT_MULT=1.3	dX=[0.106 0.007 0.035]
+Walltime = 238.47826194763184 Simulated time = 69.52305384914425
+# 202 	T = 74.0747	DT = 4.55166	NI = 3	LI=18	DT_MULT=1.3	dX=[0.119 0.009 0.044]
+Walltime = 238.7416970729828 Simulated time = 74.07471520553933
+Cut timestep to 4.5516613564
+Walltime = 242.01257133483887 Simulated time = 74.07471520553933
+Cut timestep to 3.5012779665
+Walltime = 243.24189114570618 Simulated time = 74.07471520553933
+Cut timestep to 2.6932907434
+Walltime = 244.48317170143127 Simulated time = 74.07471520553933
+Cut timestep to 2.0717621103
+Walltime = 246.97260212898254 Simulated time = 74.07471520553933
+Cut timestep to 1.5936631618
+Walltime = 247.9764060974121 Simulated time = 74.07471520553933
+Cut timestep to 1.2258947398
+Walltime = 249.2446060180664 Simulated time = 74.07471520553933
+Cut timestep to 0.9429959537
+Walltime = 250.8325183391571 Simulated time = 74.07471520553933
+Cut timestep to 0.7253815029
+Walltime = 251.85118412971497 Simulated time = 74.07471520553933
+Cut timestep to 0.5579857714
+Walltime = 252.96355533599854 Simulated time = 74.07471520553933
+Cut timestep to 0.4292198242
+Walltime = 253.970556974411 Simulated time = 74.07471520553933
+Cut timestep to 0.3301690955
+Walltime = 254.92797946929932 Simulated time = 74.07471520553933
+Cut timestep to 0.2539762273
+Walltime = 255.87989974021912 Simulated time = 74.07471520553933
+Cut timestep to 0.1953663287
+Walltime = 256.7246928215027 Simulated time = 74.07471520553933
+Stationary point detected!
+Cut timestep to 0.1502817913
+Walltime = 257.12886023521423 Simulated time = 74.07471520553933
+Stationary point detected!
+Cut timestep to 0.1156013779
+Walltime = 257.5007212162018 Simulated time = 74.07471520553933
+# 203 	T = 74.1903	DT = 0.115601	NI = 7	LI=25	DT_MULT=1.3	dX=[0.056 0.    0.001]
+Walltime = 257.80412244796753 Simulated time = 74.19031658347534
+Cut timestep to 0.1156013779
+Walltime = 258.72746992111206 Simulated time = 74.19031658347534
+Stationary point detected!
+Cut timestep to 0.0889241369
+Walltime = 259.53275513648987 Simulated time = 74.19031658347534
+Stationary point detected!
+Cut timestep to 0.0684031822
+Walltime = 259.99920749664307 Simulated time = 74.19031658347534
+Stationary point detected!
+Cut timestep to 0.0526178325
+Walltime = 260.4505317211151 Simulated time = 74.19031658347534
+Stationary point detected!
+Cut timestep to 0.0404752557
+Walltime = 260.8895788192749 Simulated time = 74.19031658347534
+# 204 	T = 74.2308	DT = 0.0404753	NI = 5	LI=14	DT_MULT=1.3	dX=[0.007 0.    0.   ]
+Walltime = 261.09470534324646 Simulated time = 74.23079183922128
+Stationary point detected!
+Cut timestep to 0.0404752557
+Walltime = 261.43641209602356 Simulated time = 74.23079183922128
+# 205 	T = 74.2713	DT = 0.0404753	NI = 5	LI=14	DT_MULT=1.3	dX=[0.004 0.    0.   ]
+Walltime = 261.6407825946808 Simulated time = 74.27126709496723
+Stationary point detected!
+Cut timestep to 0.0404752557
+Walltime = 261.9818048477173 Simulated time = 74.27126709496723
+# 206 	T = 74.3117	DT = 0.0404753	NI = 5	LI=14	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 262.1900427341461 Simulated time = 74.31174235071317
+Stationary point detected!
+Cut timestep to 0.0404752557
+Walltime = 262.60163712501526 Simulated time = 74.31174235071317
+# 207 	T = 74.3522	DT = 0.0404753	NI = 7	LI=20	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 262.89560413360596 Simulated time = 74.35221760645912
+Cut timestep to 0.0404752557
+Walltime = 263.79730582237244 Simulated time = 74.35221760645912
+Cut timestep to 0.0311348121
+Walltime = 264.70533084869385 Simulated time = 74.35221760645912
+Cut timestep to 0.0239498555
+Walltime = 265.5821862220764 Simulated time = 74.35221760645912
+Cut timestep to 0.0184229657
+Walltime = 266.4496719837189 Simulated time = 74.35221760645912
+Cut timestep to 0.0141715121
+Walltime = 267.3681905269623 Simulated time = 74.35221760645912
+Cut timestep to 0.0109011632
+Walltime = 268.19732761383057 Simulated time = 74.35221760645912
+Cut timestep to 0.0083855101
+Walltime = 269.0302927494049 Simulated time = 74.35221760645912
+Cut timestep to 0.0064503924
+Walltime = 269.85764241218567 Simulated time = 74.35221760645912
+Cut timestep to 0.0049618403
+Walltime = 270.6901979446411 Simulated time = 74.35221760645912
+Cut timestep to 0.0038168002
+Walltime = 271.5535020828247 Simulated time = 74.35221760645912
+Cut timestep to 0.0029360002
+Walltime = 272.37846422195435 Simulated time = 74.35221760645912
+# 208 	T = 74.3552	DT = 0.002936	NI = 18	LI=44	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 273.123815536499 Simulated time = 74.3551536066433
+# 209 	T = 74.359	DT = 0.0038168	NI = 1	LI=2	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 273.1828155517578 Simulated time = 74.35897040688273
+# 210 	T = 74.3639	DT = 0.00496184	NI = 1	LI=1	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 273.2398159503937 Simulated time = 74.363932247194
+# 211 	T = 74.3704	DT = 0.00645039	NI = 1	LI=2	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 273.3023543357849 Simulated time = 74.37038263959865
+# 212 	T = 74.3788	DT = 0.00838551	NI = 1	LI=2	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 273.38572001457214 Simulated time = 74.37876814972468
+# 213 	T = 74.3897	DT = 0.0109012	NI = 1	LI=2	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 273.4558563232422 Simulated time = 74.38966931288853
+# 214 	T = 74.4038	DT = 0.0141715	NI = 2	LI=4	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 273.55470752716064 Simulated time = 74.40384082500154
+# 215 	T = 74.4223	DT = 0.018423	NI = 1	LI=2	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 273.63549637794495 Simulated time = 74.42226379074845
+# 216 	T = 74.4462	DT = 0.0239499	NI = 1	LI=2	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 273.705495595932 Simulated time = 74.44621364621942
+# 217 	T = 74.4773	DT = 0.0311348	NI = 2	LI=5	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 273.8110017776489 Simulated time = 74.47734845833169
+# 218 	T = 74.5178	DT = 0.0404753	NI = 2	LI=5	DT_MULT=1.3	dX=[0.001 0.    0.   ]
+Walltime = 273.937123298645 Simulated time = 74.51782371407764
+# 219 	T = 74.5704	DT = 0.0526178	NI = 6	LI=26	DT_MULT=1.3	dX=[0.008 0.    0.001]
+Walltime = 274.2259202003479 Simulated time = 74.57044154654737
+# 220 	T = 74.6388	DT = 0.0684032	NI = 2	LI=8	DT_MULT=1.3	dX=[0.023 0.    0.001]
+Walltime = 274.32801246643066 Simulated time = 74.63884472875802
+# 221 	T = 74.7278	DT = 0.0889241	NI = 2	LI=8	DT_MULT=1.3	dX=[0.005 0.    0.001]
+Walltime = 274.4315605163574 Simulated time = 74.72776886563186
+# 222 	T = 74.8434	DT = 0.115601	NI = 2	LI=8	DT_MULT=1.3	dX=[0.003 0.    0.001]
+Walltime = 274.546560049057 Simulated time = 74.84337024356786
+# 223 	T = 74.9937	DT = 0.150282	NI = 2	LI=8	DT_MULT=1.3	dX=[0.002 0.    0.001]
+Walltime = 274.6977355480194 Simulated time = 74.99365203488466
+# 224 	T = 75.189	DT = 0.195366	NI = 2	LI=9	DT_MULT=1.3	dX=[0.002 0.    0.002]
+Walltime = 274.8167359828949 Simulated time = 75.1890183635965
+# 225 	T = 75.443	DT = 0.253976	NI = 2	LI=8	DT_MULT=1.3	dX=[0.002 0.001 0.002]
+Walltime = 274.93686509132385 Simulated time = 75.4429945909219
+# 226 	T = 75.7732	DT = 0.330169	NI = 3	LI=16	DT_MULT=1.3	dX=[0.004 0.001 0.003]
+Walltime = 275.08994150161743 Simulated time = 75.77316368644492
+# 227 	T = 76.2024	DT = 0.42922	NI = 3	LI=16	DT_MULT=1.3	dX=[0.019 0.001 0.004]
+Walltime = 275.26116490364075 Simulated time = 76.20238351062483
+# 228 	T = 76.7604	DT = 0.557986	NI = 3	LI=15	DT_MULT=1.3	dX=[0.023 0.001 0.005]
+Walltime = 275.410662651062 Simulated time = 76.76036928205872
+# 229 	T = 77.4858	DT = 0.725382	NI = 2	LI=9	DT_MULT=1.3	dX=[0.006 0.001 0.007]
+Walltime = 275.5318760871887 Simulated time = 77.48575078492277
+# 230 	T = 78.4287	DT = 0.942996	NI = 4	LI=21	DT_MULT=1.3	dX=[0.026 0.002 0.009]
+Walltime = 275.7267186641693 Simulated time = 78.42874673864604
+# 231 	T = 79.6546	DT = 1.22589	NI = 3	LI=18	DT_MULT=1.3	dX=[0.035 0.002 0.012]
+Walltime = 275.90157771110535 Simulated time = 79.6546414784863
+# 232 	T = 81.2483	DT = 1.59366	NI = 4	LI=22	DT_MULT=1.3	dX=[0.035 0.003 0.015]
+Walltime = 276.1794080734253 Simulated time = 81.24830464027863
+# 233 	T = 83.3201	DT = 2.07176	NI = 4	LI=22	DT_MULT=1.3	dX=[0.039 0.004 0.02 ]
+Walltime = 276.5325264930725 Simulated time = 83.32006675060866
+# 234 	T = 86.0134	DT = 2.69329	NI = 5	LI=29	DT_MULT=1.3	dX=[0.038 0.005 0.026]
+Walltime = 276.9898397922516 Simulated time = 86.0133574940377
+# 235 	T = 89.5146	DT = 3.50128	NI = 4	LI=23	DT_MULT=1.3	dX=[0.046 0.006 0.035]
+Walltime = 277.4577736854553 Simulated time = 89.51463546049546
+# 236 	T = 94.0663	DT = 4.55166	NI = 5	LI=34	DT_MULT=1.3	dX=[0.049 0.008 0.053]
+Walltime = 278.0271773338318 Simulated time = 94.06629681689054
+# 237 	T = 99.9835	DT = 5.91716	NI = 5	LI=35	DT_MULT=1.3	dX=[0.048 0.01  0.069]
+Walltime = 278.62453508377075 Simulated time = 99.98345658020415
+Cut timestep to 5.9171597633
+Walltime = 280.0784721374512 Simulated time = 99.98345658020415
+# 238 	T = 105.901	DT = 5.91716	NI = 5	LI=34	DT_MULT=1.3	dX=[0.178 0.01  0.064]
+Walltime = 280.5322630405426 Simulated time = 105.90061634351775
+Cut timestep to 5.9171597633
+Walltime = 281.989705324173 Simulated time = 105.90061634351775
+# 239 	T = 111.818	DT = 5.91716	NI = 7	LI=46	DT_MULT=1.3	dX=[0.173 0.009 0.06 ]
+Walltime = 282.5284905433655 Simulated time = 111.81777610683136
+# 240 	T = 119.51	DT = 7.69231	NI = 5	LI=34	DT_MULT=1.3	dX=[0.124 0.012 0.072]
+Walltime = 283.1863920688629 Simulated time = 119.51008379913905
+# 241 	T = 129.51	DT = 10	NI = 10	LI=62	DT_MULT=1.3	dX=[0.086 0.015 0.092]
+Walltime = 284.1611897945404 Simulated time = 129.51008379913904
+# 242 	T = 139.51	DT = 10	NI = 8	LI=46	DT_MULT=1.3	dX=[0.115 0.015 0.09 ]
+Walltime = 285.0298001766205 Simulated time = 139.51008379913904
+# 243 	T = 149.51	DT = 10	NI = 5	LI=30	DT_MULT=1.3	dX=[0.124 0.014 0.088]
+Walltime = 285.7645728588104 Simulated time = 149.51008379913904
+# 244 	T = 159.51	DT = 10	NI = 14	LI=78	DT_MULT=1.3	dX=[0.118 0.014 0.085]
+Walltime = 286.92740774154663 Simulated time = 159.51008379913904
+# 245 	T = 169.51	DT = 10	NI = 5	LI=31	DT_MULT=1.3	dX=[0.105 0.014 0.082]
+Walltime = 287.6825466156006 Simulated time = 169.51008379913904
+# 246 	T = 179.51	DT = 10	NI = 7	LI=44	DT_MULT=1.3	dX=[0.088 0.013 0.087]
+Walltime = 288.5709459781647 Simulated time = 179.51008379913904
+# 247 	T = 189.51	DT = 10	NI = 6	LI=39	DT_MULT=1.3	dX=[0.132 0.013 0.079]
+Walltime = 289.4064197540283 Simulated time = 189.51008379913904
+# 248 	T = 199.51	DT = 10	NI = 5	LI=32	DT_MULT=1.3	dX=[0.157 0.013 0.086]
+Walltime = 290.1701080799103 Simulated time = 199.51008379913904
+# 249 	T = 209.51	DT = 10	NI = 6	LI=36	DT_MULT=1.3	dX=[0.17  0.012 0.076]
+Walltime = 291.01539063453674 Simulated time = 209.51008379913904
+Cut timestep to 7.6923076923
+Walltime = 293.82208585739136 Simulated time = 209.51008379913904
+Cut timestep to 5.9171597633
+Walltime = 295.19732785224915 Simulated time = 209.51008379913904
+Cut timestep to 4.5516613564
+Walltime = 296.6772954463959 Simulated time = 209.51008379913904
+Cut timestep to 3.5012779665
+Walltime = 297.8165464401245 Simulated time = 209.51008379913904
+Cut timestep to 2.6932907434
+Walltime = 299.0322685241699 Simulated time = 209.51008379913904
+Cut timestep to 2.0717621103
+Walltime = 300.1292452812195 Simulated time = 209.51008379913904
+Cut timestep to 1.5936631618
+Walltime = 301.32077383995056 Simulated time = 209.51008379913904
+Cut timestep to 1.2258947398
+Walltime = 302.4898633956909 Simulated time = 209.51008379913904
+Cut timestep to 0.9429959537
+Walltime = 303.61929202079773 Simulated time = 209.51008379913904
+Cut timestep to 0.7253815029
+Walltime = 304.63975858688354 Simulated time = 209.51008379913904
+Cut timestep to 0.5579857714
+Walltime = 305.7038218975067 Simulated time = 209.51008379913904
+Cut timestep to 0.4292198242
+Walltime = 306.7885093688965 Simulated time = 209.51008379913904
+Cut timestep to 0.3301690955
+Walltime = 307.96685123443604 Simulated time = 209.51008379913904
+Cut timestep to 0.2539762273
+Walltime = 309.10001397132874 Simulated time = 209.51008379913904
+Cut timestep to 0.1953663287
+Walltime = 310.0923810005188 Simulated time = 209.51008379913904
+Cut timestep to 0.1502817913
+Walltime = 311.15161895751953 Simulated time = 209.51008379913904
+Cut timestep to 0.1156013779
+Walltime = 312.114599943161 Simulated time = 209.51008379913904
+Stationary point detected!
+Cut timestep to 0.0889241369
+Walltime = 312.34108686447144 Simulated time = 209.51008379913904
+# 250 	T = 209.599	DT = 0.0889241	NI = 2	LI=10	DT_MULT=1.3	dX=[0.043 0.    0.001]
+Walltime = 312.45420479774475 Simulated time = 209.5990079360129
+Cut timestep to 0.0889241369
+Walltime = 313.3689053058624 Simulated time = 209.5990079360129
+Cut timestep to 0.0684031822
+Walltime = 314.33334517478943 Simulated time = 209.5990079360129
+Cut timestep to 0.0526178325
+Walltime = 315.26174807548523 Simulated time = 209.5990079360129
+Cut timestep to 0.0404752557
+Walltime = 316.1673631668091 Simulated time = 209.5990079360129
+Cut timestep to 0.0311348121
+Walltime = 317.08707571029663 Simulated time = 209.5990079360129
+Cut timestep to 0.0239498555
+Walltime = 317.8832890987396 Simulated time = 209.5990079360129
+# 251 	T = 209.623	DT = 0.0239499	NI = 3	LI=11	DT_MULT=1.3	dX=[0.005 0.    0.   ]
+Walltime = 318.02455139160156 Simulated time = 209.62295779148388
+# 252 	T = 209.654	DT = 0.0311348	NI = 1	LI=2	DT_MULT=1.3	dX=[0.003 0.    0.   ]
+Walltime = 318.08155131340027 Simulated time = 209.65409260359615
+# 253 	T = 209.695	DT = 0.0404753	NI = 1	LI=4	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 318.16762113571167 Simulated time = 209.6945678593421
+# 254 	T = 209.747	DT = 0.0526178	NI = 1	LI=4	DT_MULT=1.3	dX=[0.002 0.    0.   ]
+Walltime = 318.2326214313507 Simulated time = 209.74718569181184
+# 255 	T = 209.816	DT = 0.0684032	NI = 1	LI=4	DT_MULT=1.3	dX=[0.002 0.    0.001]
+Walltime = 318.2956213951111 Simulated time = 209.8155888740225
+# 256 	T = 209.905	DT = 0.0889241	NI = 1	LI=4	DT_MULT=1.3	dX=[0.002 0.    0.001]
+Walltime = 318.3612678050995 Simulated time = 209.90451301089635
+# 257 	T = 210.02	DT = 0.115601	NI = 1	LI=4	DT_MULT=1.3	dX=[0.008 0.    0.001]
+Walltime = 318.4456503391266 Simulated time = 210.02011438883235
+# 258 	T = 210.17	DT = 0.150282	NI = 1	LI=4	DT_MULT=1.3	dX=[0.002 0.    0.001]
+Walltime = 318.50565004348755 Simulated time = 210.17039618014917
+# 259 	T = 210.366	DT = 0.195366	NI = 1	LI=4	DT_MULT=1.3	dX=[0.01  0.    0.002]
+Walltime = 318.56672501564026 Simulated time = 210.365762508861
+# 260 	T = 210.62	DT = 0.253976	NI = 1	LI=4	DT_MULT=1.3	dX=[0.003 0.    0.002]
+Walltime = 318.64972472190857 Simulated time = 210.61973873618638
+# 261 	T = 210.95	DT = 0.330169	NI = 1	LI=4	DT_MULT=1.3	dX=[0.041 0.    0.003]
+Walltime = 318.70977544784546 Simulated time = 210.9499078317094
+# 262 	T = 211.379	DT = 0.42922	NI = 2	LI=9	DT_MULT=1.3	dX=[0.018 0.001 0.003]
+Walltime = 318.83495116233826 Simulated time = 211.3791276558893
+# 263 	T = 211.937	DT = 0.557986	NI = 2	LI=10	DT_MULT=1.3	dX=[0.01  0.001 0.004]
+Walltime = 318.94032287597656 Simulated time = 211.9371134273232
+# 264 	T = 212.662	DT = 0.725382	NI = 2	LI=11	DT_MULT=1.3	dX=[0.04  0.001 0.005]
+Walltime = 319.0623228549957 Simulated time = 212.66249493018725
+# 265 	T = 213.605	DT = 0.942996	NI = 2	LI=11	DT_MULT=1.3	dX=[0.058 0.001 0.007]
+Walltime = 319.17978382110596 Simulated time = 213.60549088391053
+# 266 	T = 214.831	DT = 1.22589	NI = 3	LI=16	DT_MULT=1.3	dX=[0.046 0.002 0.009]
+Walltime = 319.3555085659027 Simulated time = 214.83138562375078
+# 267 	T = 216.425	DT = 1.59366	NI = 2	LI=11	DT_MULT=1.3	dX=[0.027 0.002 0.011]
+Walltime = 319.4635796546936 Simulated time = 216.4250487855431
+# 268 	T = 218.497	DT = 2.07176	NI = 3	LI=18	DT_MULT=1.3	dX=[0.023 0.003 0.014]
+Walltime = 319.64172315597534 Simulated time = 218.49681089587315
+# 269 	T = 221.19	DT = 2.69329	NI = 2	LI=11	DT_MULT=1.3	dX=[0.022 0.003 0.019]
+Walltime = 319.8371744155884 Simulated time = 221.19010163930218
+# 270 	T = 224.691	DT = 3.50128	NI = 3	LI=17	DT_MULT=1.3	dX=[0.022 0.004 0.024]
+Walltime = 320.26073002815247 Simulated time = 224.69137960575995
+# 271 	T = 229.243	DT = 4.55166	NI = 3	LI=18	DT_MULT=1.3	dX=[0.032 0.006 0.031]
+Walltime = 320.7378613948822 Simulated time = 229.24304096215502
+# 272 	T = 235.16	DT = 5.91716	NI = 3	LI=18	DT_MULT=1.3	dX=[0.047 0.007 0.042]
+Walltime = 321.279682636261 Simulated time = 235.16020072546863
+# 273 	T = 242.853	DT = 7.69231	NI = 3	LI=17	DT_MULT=1.3	dX=[0.101 0.009 0.05 ]
+Walltime = 321.88468623161316 Simulated time = 242.8525084177763
+# 274 	T = 252.853	DT = 10	NI = 4	LI=22	DT_MULT=1.3	dX=[0.04  0.012 0.063]
+Walltime = 322.5387580394745 Simulated time = 252.8525084177763
+# 275 	T = 262.853	DT = 10	NI = 6	LI=35	DT_MULT=1.3	dX=[0.04  0.013 0.063]
+Walltime = 323.34788274765015 Simulated time = 262.85250841777633
+# 276 	T = 272.853	DT = 10	NI = 5	LI=31	DT_MULT=1.3	dX=[0.055 0.013 0.083]
+Walltime = 324.1350636482239 Simulated time = 272.85250841777633
+# 277 	T = 282.853	DT = 10	NI = 5	LI=30	DT_MULT=1.3	dX=[0.075 0.012 0.084]
+Walltime = 324.9197280406952 Simulated time = 282.85250841777633
+# 278 	T = 292.853	DT = 10	NI = 6	LI=37	DT_MULT=1.3	dX=[0.136 0.012 0.076]
+Walltime = 325.7543008327484 Simulated time = 292.85250841777633
+# 279 	T = 302.853	DT = 10	NI = 6	LI=37	DT_MULT=1.3	dX=[0.149 0.012 0.079]
+Walltime = 326.54248332977295 Simulated time = 302.85250841777633
+# 280 	T = 312.853	DT = 10	NI = 5	LI=31	DT_MULT=1.3	dX=[0.131 0.012 0.053]
+Walltime = 327.2991383075714 Simulated time = 312.85250841777633
+# 281 	T = 322.853	DT = 10	NI = 4	LI=24	DT_MULT=1.3	dX=[0.102 0.011 0.064]
+Walltime = 328.02141785621643 Simulated time = 322.85250841777633
+# 282 	T = 332.853	DT = 10	NI = 5	LI=32	DT_MULT=1.3	dX=[0.083 0.011 0.063]
+Walltime = 328.784991979599 Simulated time = 332.85250841777633
+# 283 	T = 342.853	DT = 10	NI = 4	LI=25	DT_MULT=1.3	dX=[0.095 0.012 0.057]
+Walltime = 329.4888689517975 Simulated time = 342.85250841777633
+# 284 	T = 352.853	DT = 10	NI = 5	LI=31	DT_MULT=1.3	dX=[0.072 0.012 0.046]
+Walltime = 330.2315821647644 Simulated time = 352.85250841777633
+# 285 	T = 362.853	DT = 10	NI = 5	LI=32	DT_MULT=1.3	dX=[0.081 0.012 0.049]
+Walltime = 331.02750873565674 Simulated time = 362.85250841777633
+# 286 	T = 365	DT = 2.14749	NI = 3	LI=18	DT_MULT=1.3	dX=[0.027 0.003 0.011]
+TS = 286(210), NI = 883(3452), LI = 3622(12771)
+well_head_depth_pressure =  175.96349999999998
+The string 'wbhp' is found as control!
+Walltime = 0.0 Simulated time = 365.0
+# 1 	T = 375	DT = 10	NI = 5	LI=30	DT_MULT=1.3	dX=[0.03  0.013 0.068]
+Walltime = 0.8065547943115234 Simulated time = 375.0
+Cut timestep to 7.6923076923
+Walltime = 2.40908145904541 Simulated time = 375.0
+# 2 	T = 382.692	DT = 7.69231	NI = 4	LI=23	DT_MULT=1.3	dX=[0.018 0.01  0.063]
+Walltime = 2.8515498638153076 Simulated time = 382.6923076923077
+# 3 	T = 392.692	DT = 10	NI = 5	LI=25	DT_MULT=1.3	dX=[0.109 0.013 0.073]
+Walltime = 3.57041597366333 Simulated time = 392.6923076923077
+# 4 	T = 402.692	DT = 10	NI = 5	LI=33	DT_MULT=1.3	dX=[0.081 0.014 0.064]
+Walltime = 4.32956862449646 Simulated time = 402.6923076923077
+Cut timestep to 7.6923076923
+Walltime = 5.857908010482788 Simulated time = 402.6923076923077
+# 5 	T = 410.385	DT = 7.69231	NI = 4	LI=23	DT_MULT=1.3	dX=[0.1   0.01  0.053]
+Walltime = 6.291599988937378 Simulated time = 410.38461538461536
+# 6 	T = 420.385	DT = 10	NI = 10	LI=62	DT_MULT=1.3	dX=[0.107 0.013 0.067]
+Walltime = 7.276435852050781 Simulated time = 420.38461538461536
+Cut timestep to 7.6923076923
+Walltime = 9.051151990890503 Simulated time = 420.38461538461536
+Cut timestep to 5.9171597633
+Walltime = 10.558349370956421 Simulated time = 420.38461538461536
+Cut timestep to 4.5516613564
+Walltime = 12.012489080429077 Simulated time = 420.38461538461536
+Cut timestep to 3.5012779665
+Walltime = 13.213027954101562 Simulated time = 420.38461538461536
+Cut timestep to 2.6932907434
+Walltime = 14.295794486999512 Simulated time = 420.38461538461536
+# 7 	T = 423.078	DT = 2.69329	NI = 12	LI=56	DT_MULT=1.3	dX=[0.063 0.004 0.019]
+Walltime = 14.89914608001709 Simulated time = 423.0779061280444
+# 8 	T = 426.579	DT = 3.50128	NI = 3	LI=16	DT_MULT=1.3	dX=[0.045 0.005 0.026]
+Walltime = 15.053374767303467 Simulated time = 426.5791840945021
+# 9 	T = 431.131	DT = 4.55166	NI = 18	LI=98	DT_MULT=1.3	dX=[0.078 0.006 0.03 ]
+Walltime = 16.020119667053223 Simulated time = 431.1308454508972
+Cut timestep to 4.5516613564
+Walltime = 17.40403127670288 Simulated time = 431.1308454508972
+# 10 	T = 435.683	DT = 4.55166	NI = 14	LI=93	DT_MULT=1.3	dX=[0.089 0.006 0.029]
+Walltime = 18.207125902175903 Simulated time = 435.68250680729227
+# 11 	T = 441.6	DT = 5.91716	NI = 18	LI=97	DT_MULT=1.3	dX=[0.082 0.008 0.039]
+Walltime = 19.408578395843506 Simulated time = 441.5996665706059
+Cut timestep to 5.9171597633
+Walltime = 20.910048484802246 Simulated time = 441.5996665706059
+Cut timestep to 4.5516613564
+Walltime = 22.13834834098816 Simulated time = 441.5996665706059
+# 12 	T = 446.151	DT = 4.55166	NI = 3	LI=17	DT_MULT=1.3	dX=[0.078 0.006 0.029]
+Walltime = 22.396475076675415 Simulated time = 446.151327927001
+Cut timestep to 4.5516613564
+Walltime = 23.860154151916504 Simulated time = 446.151327927001
+Cut timestep to 3.5012779665
+Walltime = 24.844751834869385 Simulated time = 446.151327927001
+# 13 	T = 449.653	DT = 3.50128	NI = 4	LI=24	DT_MULT=1.3	dX=[0.079 0.005 0.022]
+Walltime = 25.04910159111023 Simulated time = 449.6526058934587
+Cut timestep to 3.5012779665
+Walltime = 26.17572021484375 Simulated time = 449.6526058934587
+# 14 	T = 453.154	DT = 3.50128	NI = 9	LI=60	DT_MULT=1.3	dX=[0.065 0.004 0.014]
+Walltime = 26.64454436302185 Simulated time = 453.15388385991645
+Cut timestep to 3.5012779665
+Walltime = 27.8336443901062 Simulated time = 453.15388385991645
+# 15 	T = 456.655	DT = 3.50128	NI = 4	LI=23	DT_MULT=1.3	dX=[0.042 0.004 0.015]
+Walltime = 28.08155083656311 Simulated time = 456.6551618263742
+# 16 	T = 461.207	DT = 4.55166	NI = 6	LI=29	DT_MULT=1.3	dX=[0.017 0.006 0.021]
+Walltime = 28.657721042633057 Simulated time = 461.20682318276926
+Cut timestep to 4.5516613564
+Walltime = 30.254478931427002 Simulated time = 461.20682318276926
+Cut timestep to 3.5012779665
+Walltime = 31.55084490776062 Simulated time = 461.20682318276926
+Cut timestep to 2.6932907434
+Walltime = 32.76836133003235 Simulated time = 461.20682318276926
+Cut timestep to 2.0717621103
+Walltime = 34.033528327941895 Simulated time = 461.20682318276926
+Cut timestep to 1.5936631618
+Walltime = 37.9422128200531 Simulated time = 461.20682318276926
+Cut timestep to 1.2258947398
+Walltime = 39.05704736709595 Simulated time = 461.20682318276926
+Cut timestep to 0.9429959537
+Walltime = 40.14450287818909 Simulated time = 461.20682318276926
+Cut timestep to 0.7253815029
+Walltime = 41.16706323623657 Simulated time = 461.20682318276926
+Cut timestep to 0.5579857714
+Walltime = 42.379626750946045 Simulated time = 461.20682318276926
+Cut timestep to 0.4292198242
+Walltime = 43.43359398841858 Simulated time = 461.20682318276926
+# 17 	T = 461.636	DT = 0.42922	NI = 1	LI=3	DT_MULT=1.3	dX=[0.009 0.001 0.002]
+Walltime = 43.49273109436035 Simulated time = 461.6360430069492
+Cut timestep to 0.4292198242
+Walltime = 44.548429012298584 Simulated time = 461.6360430069492
+Cut timestep to 0.3301690955
+Walltime = 45.54056692123413 Simulated time = 461.6360430069492
+Cut timestep to 0.2539762273
+Walltime = 46.52594971656799 Simulated time = 461.6360430069492
+Cut timestep to 0.1953663287
+Walltime = 47.5501172542572 Simulated time = 461.6360430069492
+Cut timestep to 0.1502817913
+Walltime = 48.503915786743164 Simulated time = 461.6360430069492
+Cut timestep to 0.1156013779
+Walltime = 49.462157249450684 Simulated time = 461.6360430069492
+Cut timestep to 0.0889241369
+Walltime = 50.39186358451843 Simulated time = 461.6360430069492
+Cut timestep to 0.0684031822
+Walltime = 51.34617853164673 Simulated time = 461.6360430069492
+Cut timestep to 0.0526178325
+Walltime = 52.28875255584717 Simulated time = 461.6360430069492
+# 18 	T = 461.689	DT = 0.0526178	NI = 1	LI=3	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 52.3468062877655 Simulated time = 461.6886608394189
+Cut timestep to 0.0526178325
+Walltime = 53.29441046714783 Simulated time = 461.6886608394189
+Cut timestep to 0.0404752557
+Walltime = 54.26489067077637 Simulated time = 461.6886608394189
+Cut timestep to 0.0311348121
+Walltime = 55.24406957626343 Simulated time = 461.6886608394189
+Cut timestep to 0.0239498555
+Walltime = 56.154552698135376 Simulated time = 461.6886608394189
+Cut timestep to 0.0184229657
+Walltime = 57.059784173965454 Simulated time = 461.6886608394189
+# 19 	T = 461.707	DT = 0.018423	NI = 11	LI=46	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 57.534879207611084 Simulated time = 461.7070838051658
+# 20 	T = 461.731	DT = 0.0239499	NI = 1	LI=3	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 57.592878580093384 Simulated time = 461.73103366063674
+# 21 	T = 461.762	DT = 0.0311348	NI = 1	LI=3	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 57.65245008468628 Simulated time = 461.762168472749
+# 22 	T = 461.803	DT = 0.0404753	NI = 1	LI=3	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 57.712602376937866 Simulated time = 461.80264372849496
+# 23 	T = 461.855	DT = 0.0526178	NI = 1	LI=3	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 57.792179107666016 Simulated time = 461.85526156096466
+# 24 	T = 461.924	DT = 0.0684032	NI = 1	LI=3	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 57.85927629470825 Simulated time = 461.9236647431753
+# 25 	T = 462.013	DT = 0.0889241	NI = 1	LI=2	DT_MULT=1.3	dX=[0. 0. 0.]
+Walltime = 57.91479253768921 Simulated time = 462.0125888800492
+# 26 	T = 462.128	DT = 0.115601	NI = 1	LI=2	DT_MULT=1.3	dX=[0.    0.    0.001]
+Walltime = 57.970144271850586 Simulated time = 462.1281902579852
+# 27 	T = 462.278	DT = 0.150282	NI = 1	LI=2	DT_MULT=1.3	dX=[0.004 0.    0.001]
+Walltime = 58.046144247055054 Simulated time = 462.27847204930197
+# 28 	T = 462.474	DT = 0.195366	NI = 1	LI=4	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 58.1171441078186 Simulated time = 462.4738383780138
+# 29 	T = 462.728	DT = 0.253976	NI = 1	LI=4	DT_MULT=1.3	dX=[0.001 0.    0.001]
+Walltime = 58.17872190475464 Simulated time = 462.7278146053392
+# 30 	T = 463.058	DT = 0.330169	NI = 1	LI=4	DT_MULT=1.3	dX=[0.001 0.    0.002]
+Walltime = 58.240721702575684 Simulated time = 463.05798370086217
+# 31 	T = 463.487	DT = 0.42922	NI = 1	LI=4	DT_MULT=1.3	dX=[0.001 0.001 0.002]
+Walltime = 58.32872176170349 Simulated time = 463.4872035250421
+# 32 	T = 464.045	DT = 0.557986	NI = 1	LI=4	DT_MULT=1.3	dX=[0.002 0.001 0.003]
+Walltime = 58.38987731933594 Simulated time = 464.045189296476
+# 33 	T = 464.771	DT = 0.725382	NI = 1	LI=4	DT_MULT=1.3	dX=[0.002 0.001 0.004]
+Walltime = 58.45194673538208 Simulated time = 464.7705707993401
+# 34 	T = 465.714	DT = 0.942996	NI = 1	LI=5	DT_MULT=1.3	dX=[0.002 0.001 0.005]
+Walltime = 58.53402400016785 Simulated time = 465.71356675306333
+# 35 	T = 466.939	DT = 1.22589	NI = 2	LI=10	DT_MULT=1.3	dX=[0.012 0.002 0.006]
+Walltime = 58.64202356338501 Simulated time = 466.9394614929036
+# 36 	T = 468.533	DT = 1.59366	NI = 2	LI=11	DT_MULT=1.3	dX=[0.007 0.002 0.009]
+Walltime = 58.92379021644592 Simulated time = 468.53312465469594
+# 37 	T = 470.605	DT = 2.07176	NI = 2	LI=11	DT_MULT=1.3	dX=[0.01  0.003 0.011]
+Walltime = 59.22559666633606 Simulated time = 470.604886765026
+# 38 	T = 473.298	DT = 2.69329	NI = 2	LI=11	DT_MULT=1.3	dX=[0.007 0.003 0.016]
+Walltime = 59.59783434867859 Simulated time = 473.298177508455
+# 39 	T = 476.799	DT = 3.50128	NI = 2	LI=11	DT_MULT=1.3	dX=[0.01  0.004 0.021]
+Walltime = 59.99105405807495 Simulated time = 476.79945547491275
+# 40 	T = 481.351	DT = 4.55166	NI = 2	LI=11	DT_MULT=1.3	dX=[0.016 0.006 0.029]
+Walltime = 60.4198215007782 Simulated time = 481.3511168313078
+# 41 	T = 487.268	DT = 5.91716	NI = 3	LI=17	DT_MULT=1.3	dX=[0.066 0.007 0.043]
+Walltime = 60.9455189704895 Simulated time = 487.26827659462145
+# 42 	T = 494.961	DT = 7.69231	NI = 2	LI=11	DT_MULT=1.3	dX=[0.055 0.009 0.065]
+Walltime = 61.52620005607605 Simulated time = 494.96058428692913
+# 43 	T = 504.961	DT = 10	NI = 3	LI=19	DT_MULT=1.3	dX=[0.106 0.012 0.076]
+Walltime = 62.152650117874146 Simulated time = 504.96058428692913
+# 44 	T = 514.961	DT = 10	NI = 3	LI=19	DT_MULT=1.3	dX=[0.082 0.013 0.068]
+Walltime = 62.78596472740173 Simulated time = 514.9605842869291
+# 45 	T = 524.961	DT = 10	NI = 3	LI=19	DT_MULT=1.3	dX=[0.07  0.013 0.064]
+Walltime = 63.39495611190796 Simulated time = 524.9605842869291
+# 46 	T = 534.961	DT = 10	NI = 3	LI=18	DT_MULT=1.3	dX=[0.089 0.013 0.066]
+Walltime = 64.01707482337952 Simulated time = 534.9605842869291
+# 47 	T = 544.961	DT = 10	NI = 3	LI=19	DT_MULT=1.3	dX=[0.076 0.013 0.065]
+Walltime = 64.64220690727234 Simulated time = 544.9605842869291
+# 48 	T = 554.961	DT = 10	NI = 3	LI=18	DT_MULT=1.3	dX=[0.066 0.013 0.061]
+Walltime = 65.26878333091736 Simulated time = 554.9605842869291
+# 49 	T = 564.961	DT = 10	NI = 3	LI=17	DT_MULT=1.3	dX=[0.085 0.013 0.056]
+Walltime = 65.9141800403595 Simulated time = 564.9605842869291
+# 50 	T = 574.961	DT = 10	NI = 3	LI=19	DT_MULT=1.3	dX=[0.044 0.013 0.056]
+Walltime = 66.56702780723572 Simulated time = 574.9605842869291
+# 51 	T = 584.961	DT = 10	NI = 3	LI=18	DT_MULT=1.3	dX=[0.092 0.014 0.06 ]
+Walltime = 67.22040820121765 Simulated time = 584.9605842869291
+# 52 	T = 594.961	DT = 10	NI = 3	LI=19	DT_MULT=1.3	dX=[0.099 0.013 0.052]
+Walltime = 67.8928611278534 Simulated time = 594.9605842869291
+# 53 	T = 604.961	DT = 10	NI = 2	LI=11	DT_MULT=1.3	dX=[0.062 0.013 0.064]
+Walltime = 68.53443217277527 Simulated time = 604.9605842869291
+# 54 	T = 614.961	DT = 10	NI = 2	LI=12	DT_MULT=1.3	dX=[0.043 0.013 0.077]
+Walltime = 69.15977120399475 Simulated time = 614.9605842869291
+# 55 	T = 624.961	DT = 10	NI = 3	LI=19	DT_MULT=1.3	dX=[0.116 0.013 0.061]
+Walltime = 69.84320497512817 Simulated time = 624.9605842869291
+# 56 	T = 634.961	DT = 10	NI = 2	LI=12	DT_MULT=1.3	dX=[0.09  0.014 0.075]
+Walltime = 70.49712467193604 Simulated time = 634.9605842869291
+# 57 	T = 644.961	DT = 10	NI = 3	LI=17	DT_MULT=1.3	dX=[0.086 0.014 0.052]
+Walltime = 71.18746733665466 Simulated time = 644.9605842869291
+# 58 	T = 654.961	DT = 10	NI = 2	LI=12	DT_MULT=1.3	dX=[0.038 0.015 0.063]
+Walltime = 71.81923770904541 Simulated time = 654.9605842869291
+# 59 	T = 664.961	DT = 10	NI = 2	LI=12	DT_MULT=1.3	dX=[0.065 0.015 0.058]
+Walltime = 72.4375729560852 Simulated time = 664.9605842869291
+# 60 	T = 674.961	DT = 10	NI = 2	LI=12	DT_MULT=1.3	dX=[0.098 0.016 0.052]
+Walltime = 73.07737755775452 Simulated time = 674.9605842869291
+# 61 	T = 684.961	DT = 10	NI = 2	LI=12	DT_MULT=1.3	dX=[0.032 0.016 0.054]
+Walltime = 73.70166611671448 Simulated time = 684.9605842869291
+# 62 	T = 694.961	DT = 10	NI = 2	LI=13	DT_MULT=1.3	dX=[0.089 0.016 0.048]
+Walltime = 74.35020160675049 Simulated time = 694.9605842869291
+# 63 	T = 704.961	DT = 10	NI = 2	LI=11	DT_MULT=1.3	dX=[0.032 0.016 0.051]
+Walltime = 74.99865508079529 Simulated time = 704.9605842869291
+# 64 	T = 714.961	DT = 10	NI = 2	LI=13	DT_MULT=1.3	dX=[0.078 0.017 0.055]
+Walltime = 75.62201499938965 Simulated time = 714.9605842869291
+# 65 	T = 724.961	DT = 10	NI = 2	LI=13	DT_MULT=1.3	dX=[0.048 0.018 0.071]
+Walltime = 76.280690908432 Simulated time = 724.9605842869291
+# 66 	T = 730	DT = 5.03942	NI = 2	LI=11	DT_MULT=1.3	dX=[0.039 0.01  0.041]
+TS = 352(248), NI = 1112(4212), LI = 4891(16300)

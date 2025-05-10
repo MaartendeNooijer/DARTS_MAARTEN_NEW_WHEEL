@@ -1,0 +1,475 @@
+well_head_depth_pressure =  175.96349999999998
+The string 'wbhp' is found as control!
+Walltime = 0.0 Simulated time = 0.0
+# 1 	T = 1e-05	DT = 1e-05	NI = 5	LI=7
+Walltime = 0.2968740463256836 Simulated time = 1e-05
+# 2 	T = 2.3e-05	DT = 1.3e-05	NI = 1	LI=2
+Walltime = 0.3593766689300537 Simulated time = 2.3000000000000003e-05
+# 3 	T = 3.99e-05	DT = 1.69e-05	NI = 1	LI=2
+Walltime = 0.4062483310699463 Simulated time = 3.990000000000001e-05
+# 4 	T = 6.187e-05	DT = 2.197e-05	NI = 1	LI=2
+Walltime = 0.4531276226043701 Simulated time = 6.187e-05
+# 5 	T = 9.0431e-05	DT = 2.8561e-05	NI = 2	LI=3
+Walltime = 0.5468747615814209 Simulated time = 9.0431e-05
+# 6 	T = 0.00012756	DT = 3.71293e-05	NI = 2	LI=4
+Walltime = 0.6249990463256836 Simulated time = 0.0001275603
+# 7 	T = 0.000175828	DT = 4.82681e-05	NI = 2	LI=4
+Walltime = 0.7031283378601074 Simulated time = 0.00017582839
+# 8 	T = 0.000238577	DT = 6.27485e-05	NI = 1	LI=2
+Walltime = 0.7656247615814209 Simulated time = 0.000238576907
+# 9 	T = 0.00032015	DT = 8.15731e-05	NI = 2	LI=4
+Walltime = 0.8593764305114746 Simulated time = 0.0003201499791
+# 10 	T = 0.000426195	DT = 0.000106045	NI = 2	LI=4
+Walltime = 0.9375009536743164 Simulated time = 0.00042619497283
+# 11 	T = 0.000564053	DT = 0.000137858	NI = 2	LI=4
+Walltime = 1.0312509536743164 Simulated time = 0.000564053464679
+# 12 	T = 0.00074327	DT = 0.000179216	NI = 2	LI=4
+Walltime = 1.1250038146972656 Simulated time = 0.0007432695040827001
+# 13 	T = 0.00097625	DT = 0.000232981	NI = 2	LI=6
+Walltime = 1.2187504768371582 Simulated time = 0.0009762503553075102
+# 14 	T = 0.00127913	DT = 0.000302875	NI = 2	LI=6
+Walltime = 1.3281280994415283 Simulated time = 0.0012791254618997633
+# 15 	T = 0.00167286	DT = 0.000393738	NI = 2	LI=4
+Walltime = 1.4374990463256836 Simulated time = 0.0016728631004696924
+# 16 	T = 0.00218472	DT = 0.000511859	NI = 2	LI=8
+Walltime = 1.5312530994415283 Simulated time = 0.0021847220306106
+# 17 	T = 0.00285014	DT = 0.000665417	NI = 2	LI=6
+Walltime = 1.640627145767212 Simulated time = 0.0028501386397937803
+# 18 	T = 0.00371518	DT = 0.000865042	NI = 2	LI=6
+Walltime = 1.7499985694885254 Simulated time = 0.0037151802317319147
+# 19 	T = 0.00483973	DT = 0.00112455	NI = 2	LI=6
+Walltime = 1.8437511920928955 Simulated time = 0.004839734301251489
+# 20 	T = 0.00630165	DT = 0.00146192	NI = 1	LI=3
+Walltime = 1.9218757152557373 Simulated time = 0.006301654591626936
+# 21 	T = 0.00820215	DT = 0.0019005	NI = 1	LI=3
+Walltime = 1.9843733310699463 Simulated time = 0.008202150969115017
+# 22 	T = 0.0106728	DT = 0.00247065	NI = 1	LI=4
+Walltime = 2.0468738079071045 Simulated time = 0.010672796259849522
+# 23 	T = 0.0138846	DT = 0.00321184	NI = 1	LI=4
+Walltime = 2.1249990463256836 Simulated time = 0.013884635137804378
+# 24 	T = 0.01806	DT = 0.00417539	NI = 1	LI=3
+Walltime = 2.1896426677703857 Simulated time = 0.01806002567914569
+# 25 	T = 0.023488	DT = 0.00542801	NI = 1	LI=3
+Walltime = 2.2521448135375977 Simulated time = 0.0234880333828894
+# 26 	T = 0.0305444	DT = 0.00705641	NI = 1	LI=3
+Walltime = 2.3163602352142334 Simulated time = 0.03054444339775622
+Stationary point detected!
+Cut timestep to 0.0070564100
+Walltime = 2.8163654804229736 Simulated time = 0.03054444339775622
+Stationary point detected!
+Cut timestep to 0.0054280077
+Walltime = 3.20698881149292 Simulated time = 0.03054444339775622
+# 27 	T = 0.0359725	DT = 0.00542801	NI = 7	LI=17
+Walltime = 3.5507357120513916 Simulated time = 0.03597245110149993
+# 28 	T = 0.0430289	DT = 0.00705641	NI = 3	LI=8
+Walltime = 3.691363573074341 Simulated time = 0.04302886111636675
+Cut timestep to 0.0070564100
+Walltime = 4.816362380981445 Simulated time = 0.04302886111636675
+Cut timestep to 0.0054280077
+Walltime = 5.942738056182861 Simulated time = 0.04302886111636675
+Cut timestep to 0.0041753905
+Walltime = 7.196058511734009 Simulated time = 0.04302886111636675
+Cut timestep to 0.0032118389
+Walltime = 10.400718212127686 Simulated time = 0.04302886111636675
+Cut timestep to 0.0024706453
+Walltime = 11.77029299736023 Simulated time = 0.04302886111636675
+# 29 	T = 0.0454995	DT = 0.00247065	NI = 6	LI=20
+Walltime = 12.1963951587677 Simulated time = 0.04549950640710126
+Cut timestep to 0.0024706453
+Walltime = 13.352648973464966 Simulated time = 0.04549950640710126
+Cut timestep to 0.0019004964
+Walltime = 14.46419882774353 Simulated time = 0.04549950640710126
+Cut timestep to 0.0014619203
+Walltime = 15.536251783370972 Simulated time = 0.04549950640710126
+Cut timestep to 0.0011245541
+Walltime = 16.447680711746216 Simulated time = 0.04549950640710126
+Cut timestep to 0.0008650416
+Walltime = 17.38517951965332 Simulated time = 0.04549950640710126
+Cut timestep to 0.0006654166
+Walltime = 18.24455714225769 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0005118589
+Walltime = 19.151044130325317 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0003937376
+Walltime = 19.776045083999634 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0003028751
+Walltime = 20.24352717399597 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0002329809
+Walltime = 20.8484148979187 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0001792160
+Walltime = 21.282392978668213 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0001378585
+Walltime = 21.728734016418457 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0001060450
+Walltime = 22.030681848526 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0000815731
+Walltime = 22.34318733215332 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 22.687535047531128 Simulated time = 0.04549950640710126
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 23.218788862228394 Simulated time = 0.04549950640710126
+# 30 	T = 0.0455478	DT = 4.82681e-05	NI = 2	LI=3
+Walltime = 23.31253457069397 Simulated time = 0.045547774497101255
+# 31 	T = 0.0456105	DT = 6.27485e-05	NI = 1	LI=1
+Walltime = 23.359413385391235 Simulated time = 0.045610523014101255
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 23.849088668823242 Simulated time = 0.045610523014101255
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 24.41159224510193 Simulated time = 0.045610523014101255
+# 32 	T = 0.0456588	DT = 4.82681e-05	NI = 1	LI=1
+Walltime = 24.45846128463745 Simulated time = 0.04565879110410125
+# 33 	T = 0.0457215	DT = 6.27485e-05	NI = 1	LI=1
+Walltime = 24.505332231521606 Simulated time = 0.04572153962110125
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 25.071762561798096 Simulated time = 0.04572153962110125
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 25.618638277053833 Simulated time = 0.04572153962110125
+# 34 	T = 0.0457698	DT = 4.82681e-05	NI = 1	LI=1
+Walltime = 25.68114185333252 Simulated time = 0.04576980771110125
+# 35 	T = 0.0458326	DT = 6.27485e-05	NI = 1	LI=1
+Walltime = 25.759268283843994 Simulated time = 0.04583255622810125
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 26.361119270324707 Simulated time = 0.04583255622810125
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 27.001856565475464 Simulated time = 0.04583255622810125
+# 36 	T = 0.0458808	DT = 4.82681e-05	NI = 1	LI=1
+Walltime = 27.11123561859131 Simulated time = 0.04588082431810125
+# 37 	T = 0.0459436	DT = 6.27485e-05	NI = 1	LI=1
+Walltime = 27.15811276435852 Simulated time = 0.04594357283510125
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 27.65811038017273 Simulated time = 0.04594357283510125
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 28.142481565475464 Simulated time = 0.04594357283510125
+# 38 	T = 0.0459918	DT = 4.82681e-05	NI = 2	LI=3
+Walltime = 28.2206072807312 Simulated time = 0.045991840925101245
+# 39 	T = 0.0460546	DT = 6.27485e-05	NI = 1	LI=1
+Walltime = 28.26748037338257 Simulated time = 0.046054589442101244
+# 40 	T = 0.0461362	DT = 8.15731e-05	NI = 1	LI=1
+Walltime = 28.314359188079834 Simulated time = 0.046136162514201245
+# 41 	T = 0.0462422	DT = 0.000106045	NI = 1	LI=1
+Walltime = 28.361875772476196 Simulated time = 0.046242207507931246
+# 42 	T = 0.0463801	DT = 0.000137858	NI = 1	LI=2
+Walltime = 28.424402475357056 Simulated time = 0.04638006599978024
+# 43 	T = 0.0465593	DT = 0.000179216	NI = 1	LI=1
+Walltime = 28.471277475357056 Simulated time = 0.04655928203918394
+# 44 	T = 0.0467923	DT = 0.000232981	NI = 1	LI=2
+Walltime = 28.533776998519897 Simulated time = 0.04679226289040875
+# 45 	T = 0.0470951	DT = 0.000302875	NI = 1	LI=2
+Walltime = 28.580658674240112 Simulated time = 0.047095137997001
+# 46 	T = 0.0474889	DT = 0.000393738	NI = 1	LI=2
+Walltime = 28.643167734146118 Simulated time = 0.04748887563557093
+# 47 	T = 0.0480007	DT = 0.000511859	NI = 1	LI=3
+Walltime = 28.705654859542847 Simulated time = 0.048000734565711835
+# 48 	T = 0.0486662	DT = 0.000665417	NI = 1	LI=2
+Walltime = 28.752530336380005 Simulated time = 0.04866615117489501
+# 49 	T = 0.0495312	DT = 0.000865042	NI = 1	LI=3
+Walltime = 28.830656051635742 Simulated time = 0.04953119276683315
+# 50 	T = 0.0506557	DT = 0.00112455	NI = 2	LI=6
+Walltime = 28.971906185150146 Simulated time = 0.050655746836352725
+# 51 	T = 0.0521177	DT = 0.00146192	NI = 2	LI=4
+Walltime = 29.081284284591675 Simulated time = 0.05211766712672817
+# 52 	T = 0.0540182	DT = 0.0019005	NI = 2	LI=4
+Walltime = 29.1906635761261 Simulated time = 0.05401816350421625
+# 53 	T = 0.0564888	DT = 0.00247065	NI = 2	LI=6
+Walltime = 29.315657377243042 Simulated time = 0.05648880879495076
+# 54 	T = 0.0597006	DT = 0.00321184	NI = 2	LI=7
+Walltime = 29.438617944717407 Simulated time = 0.059700647672905616
+# 55 	T = 0.063876	DT = 0.00417539	NI = 2	LI=6
+Walltime = 29.563619136810303 Simulated time = 0.06387603821424694
+# 56 	T = 0.069304	DT = 0.00542801	NI = 3	LI=9
+Walltime = 29.704245805740356 Simulated time = 0.06930404591799065
+# 57 	T = 0.0763605	DT = 0.00705641	NI = 3	LI=9
+Walltime = 29.861328125 Simulated time = 0.07636045593285747
+# 58 	T = 0.0855338	DT = 0.00917333	NI = 3	LI=9
+Walltime = 30.03320860862732 Simulated time = 0.08553378895218433
+# 59 	T = 0.0974591	DT = 0.0119253	NI = 4	LI=15
+Walltime = 30.31445598602295 Simulated time = 0.09745912187730926
+# 60 	T = 0.1	DT = 0.00254088	NI = 3	LI=10
+TS = 60(31), NI = 110(445), LI = 270(1211)
+well_head_depth_pressure =  175.96349999999998
+The string 'wbhp' is found as control!
+Walltime = 0.0 Simulated time = 0.1
+Cut timestep to 0.0119253329
+Walltime = 1.305365800857544 Simulated time = 0.1
+Cut timestep to 0.0091733330
+Walltime = 2.854984760284424 Simulated time = 0.1
+Cut timestep to 0.0070564100
+Walltime = 4.013396978378296 Simulated time = 0.1
+Cut timestep to 0.0054280077
+Walltime = 5.109328269958496 Simulated time = 0.1
+Cut timestep to 0.0041753905
+Walltime = 6.298609495162964 Simulated time = 0.1
+# 1 	T = 0.104175	DT = 0.00417539	NI = 3	LI=11
+Walltime = 6.486106634140015 Simulated time = 0.10417539054134133
+Cut timestep to 0.0041753905
+Walltime = 7.689239025115967 Simulated time = 0.10417539054134133
+Cut timestep to 0.0032118389
+Walltime = 8.627264738082886 Simulated time = 0.10417539054134133
+Cut timestep to 0.0024706453
+Walltime = 9.580600500106812 Simulated time = 0.10417539054134133
+Cut timestep to 0.0019004964
+Walltime = 10.46053171157837 Simulated time = 0.10417539054134133
+Cut timestep to 0.0014619203
+Walltime = 11.351158142089844 Simulated time = 0.10417539054134133
+Cut timestep to 0.0011245541
+Walltime = 12.133590936660767 Simulated time = 0.10417539054134133
+# 2 	T = 0.1053	DT = 0.00112455	NI = 4	LI=14
+Walltime = 12.305467367172241 Simulated time = 0.1052999446108609
+Cut timestep to 0.0011245541
+Walltime = 13.149214506149292 Simulated time = 0.1052999446108609
+Cut timestep to 0.0008650416
+Walltime = 14.243186473846436 Simulated time = 0.1052999446108609
+Cut timestep to 0.0006654166
+Walltime = 15.149440050125122 Simulated time = 0.1052999446108609
+Stationary point detected!
+Cut timestep to 0.0005118589
+Walltime = 15.977560997009277 Simulated time = 0.1052999446108609
+Stationary point detected!
+Cut timestep to 0.0003937376
+Walltime = 16.931455612182617 Simulated time = 0.1052999446108609
+Stationary point detected!
+Cut timestep to 0.0003028751
+Walltime = 17.894257068634033 Simulated time = 0.1052999446108609
+Cut timestep to 0.0002329809
+Walltime = 18.801696062088013 Simulated time = 0.1052999446108609
+# 3 	T = 0.105533	DT = 0.000232981	NI = 3	LI=8
+Walltime = 18.92669653892517 Simulated time = 0.1055329254620857
+Stationary point detected!
+Cut timestep to 0.0002329809
+Walltime = 19.56777548789978 Simulated time = 0.1055329254620857
+Cut timestep to 0.0001792160
+Walltime = 20.567775011062622 Simulated time = 0.1055329254620857
+# 4 	T = 0.105712	DT = 0.000179216	NI = 6	LI=9
+Walltime = 20.880271673202515 Simulated time = 0.1057121415014894
+# 5 	T = 0.105945	DT = 0.000232981	NI = 2	LI=5
+Walltime = 21.01548194885254 Simulated time = 0.10594512235271421
+# 6 	T = 0.106248	DT = 0.000302875	NI = 2	LI=5
+Walltime = 21.140486478805542 Simulated time = 0.10624799745930646
+# 7 	T = 0.106642	DT = 0.000393738	NI = 2	LI=4
+Walltime = 21.2654812335968 Simulated time = 0.10664173509787639
+# 8 	T = 0.107154	DT = 0.000511859	NI = 1	LI=3
+Walltime = 21.343605518341064 Simulated time = 0.1071535940280173
+# 9 	T = 0.107819	DT = 0.000665417	NI = 1	LI=2
+Walltime = 21.40688729286194 Simulated time = 0.10781901063720048
+# 10 	T = 0.108684	DT = 0.000865042	NI = 1	LI=3
+Walltime = 21.46938729286194 Simulated time = 0.10868405222913861
+# 11 	T = 0.109809	DT = 0.00112455	NI = 1	LI=3
+Walltime = 21.531888961791992 Simulated time = 0.10980860629865818
+# 12 	T = 0.111271	DT = 0.00146192	NI = 1	LI=2
+Walltime = 21.57876491546631 Simulated time = 0.11127052658903364
+# 13 	T = 0.113171	DT = 0.0019005	NI = 2	LI=4
+Walltime = 21.672516584396362 Simulated time = 0.11317102296652172
+# 14 	T = 0.115642	DT = 0.00247065	NI = 2	LI=6
+Walltime = 21.78188705444336 Simulated time = 0.11564166825725622
+# 15 	T = 0.118854	DT = 0.00321184	NI = 2	LI=7
+Walltime = 21.875640392303467 Simulated time = 0.11885350713521108
+# 16 	T = 0.123029	DT = 0.00417539	NI = 2	LI=6
+Walltime = 21.969388723373413 Simulated time = 0.1230288976765524
+# 17 	T = 0.128457	DT = 0.00542801	NI = 2	LI=6
+Walltime = 22.07876181602478 Simulated time = 0.1284569053802961
+# 18 	T = 0.135513	DT = 0.00705641	NI = 2	LI=6
+Walltime = 22.203762531280518 Simulated time = 0.13551331539516293
+# 19 	T = 0.144687	DT = 0.00917333	NI = 2	LI=6
+Walltime = 22.313486337661743 Simulated time = 0.1446866484144898
+# 20 	T = 0.156612	DT = 0.0119253	NI = 2	LI=6
+Walltime = 22.422817945480347 Simulated time = 0.15661198133961474
+Cut timestep to 0.0119253329
+Walltime = 23.586802005767822 Simulated time = 0.15661198133961474
+Stationary point detected!
+Cut timestep to 0.0091733330
+Walltime = 24.138737201690674 Simulated time = 0.15661198133961474
+# 21 	T = 0.165785	DT = 0.00917333	NI = 2	LI=6
+Walltime = 24.248111724853516 Simulated time = 0.16578531435894162
+Cut timestep to 0.0091733330
+Walltime = 25.599615335464478 Simulated time = 0.16578531435894162
+Cut timestep to 0.0070564100
+Walltime = 26.992459535598755 Simulated time = 0.16578531435894162
+Cut timestep to 0.0054280077
+Walltime = 28.26028060913086 Simulated time = 0.16578531435894162
+Cut timestep to 0.0041753905
+Walltime = 29.30618405342102 Simulated time = 0.16578531435894162
+# 22 	T = 0.169961	DT = 0.00417539	NI = 18	LI=59
+Walltime = 30.40185546875 Simulated time = 0.16996070490028292
+# 23 	T = 0.175389	DT = 0.00542801	NI = 2	LI=6
+Walltime = 30.51141357421875 Simulated time = 0.17538871260402664
+# 24 	T = 0.182445	DT = 0.00705641	NI = 2	LI=6
+Walltime = 30.667906045913696 Simulated time = 0.18244512261889345
+# 25 	T = 0.191618	DT = 0.00917333	NI = 2	LI=6
+Walltime = 30.792903900146484 Simulated time = 0.19161845563822033
+# 26 	T = 0.2	DT = 0.00838154	NI = 2	LI=6
+TS = 86(57), NI = 181(941), LI = 475(2553)
+well_head_depth_pressure =  175.96349999999998
+The string 'wbhp' is found as control!
+Walltime = 0.0 Simulated time = 0.2
+# 1 	T = 0.211925	DT = 0.0119253	NI = 8	LI=27
+Walltime = 0.3801915645599365 Simulated time = 0.21192533292512494
+Cut timestep to 0.0119253329
+Walltime = 1.6197655200958252 Simulated time = 0.21192533292512494
+Cut timestep to 0.0091733330
+Walltime = 2.6978907585144043 Simulated time = 0.21192533292512494
+Cut timestep to 0.0070564100
+Walltime = 3.8250021934509277 Simulated time = 0.21192533292512494
+Cut timestep to 0.0054280077
+Walltime = 4.856248140335083 Simulated time = 0.21192533292512494
+Cut timestep to 0.0041753905
+Walltime = 5.684818744659424 Simulated time = 0.21192533292512494
+Cut timestep to 0.0032118389
+Walltime = 6.512476205825806 Simulated time = 0.21192533292512494
+Cut timestep to 0.0024706453
+Walltime = 7.4791483879089355 Simulated time = 0.21192533292512494
+Cut timestep to 0.0019004964
+Walltime = 8.326631784439087 Simulated time = 0.21192533292512494
+Cut timestep to 0.0014619203
+Walltime = 9.0614652633667 Simulated time = 0.21192533292512494
+Stationary point detected!
+Cut timestep to 0.0011245541
+Walltime = 9.780219078063965 Simulated time = 0.21192533292512494
+Stationary point detected!
+Cut timestep to 0.0008650416
+Walltime = 10.313677072525024 Simulated time = 0.21192533292512494
+Stationary point detected!
+Cut timestep to 0.0006654166
+Walltime = 11.22226071357727 Simulated time = 0.21192533292512494
+Stationary point detected!
+Cut timestep to 0.0005118589
+Walltime = 11.902636289596558 Simulated time = 0.21192533292512494
+Stationary point detected!
+Cut timestep to 0.0003937376
+Walltime = 12.856186389923096 Simulated time = 0.21192533292512494
+# 2 	T = 0.212319	DT = 0.000393738	NI = 2	LI=4
+Walltime = 12.981184959411621 Simulated time = 0.21231907056369487
+Stationary point detected!
+Cut timestep to 0.0003937376
+Walltime = 13.559308290481567 Simulated time = 0.21231907056369487
+Stationary point detected!
+Cut timestep to 0.0003028751
+Walltime = 13.934312582015991 Simulated time = 0.21231907056369487
+Stationary point detected!
+Cut timestep to 0.0002329809
+Walltime = 14.356184720993042 Simulated time = 0.21231907056369487
+Stationary point detected!
+Cut timestep to 0.0001792160
+Walltime = 14.731183052062988 Simulated time = 0.21231907056369487
+Stationary point detected!
+Cut timestep to 0.0001378585
+Walltime = 15.13743805885315 Simulated time = 0.21231907056369487
+Stationary point detected!
+Cut timestep to 0.0001060450
+Walltime = 15.559309005737305 Simulated time = 0.21231907056369487
+Stationary point detected!
+Cut timestep to 0.0000815731
+Walltime = 15.965561628341675 Simulated time = 0.21231907056369487
+Stationary point detected!
+Cut timestep to 0.0000627485
+Walltime = 16.420910835266113 Simulated time = 0.21231907056369487
+Stationary point detected!
+Cut timestep to 0.0000482681
+Walltime = 16.858409643173218 Simulated time = 0.21231907056369487
+# 3 	T = 0.212367	DT = 4.82681e-05	NI = 2	LI=3
+Walltime = 16.952160120010376 Simulated time = 0.21236733865369486
+# 4 	T = 0.21243	DT = 6.27485e-05	NI = 1	LI=1
+Walltime = 17.014662504196167 Simulated time = 0.21243008717069486
+# 5 	T = 0.212512	DT = 8.15731e-05	NI = 1	LI=1
+Walltime = 17.07715654373169 Simulated time = 0.21251166024279486
+# 6 	T = 0.212618	DT = 0.000106045	NI = 1	LI=1
+Walltime = 17.139657020568848 Simulated time = 0.21261770523652485
+# 7 	T = 0.212756	DT = 0.000137858	NI = 1	LI=2
+Walltime = 17.186530828475952 Simulated time = 0.21275556372837384
+# 8 	T = 0.212935	DT = 0.000179216	NI = 1	LI=1
+Walltime = 17.24904727935791 Simulated time = 0.21293477976777755
+# 9 	T = 0.213168	DT = 0.000232981	NI = 1	LI=2
+Walltime = 17.3115336894989 Simulated time = 0.21316776061900236
+# 10 	T = 0.213471	DT = 0.000302875	NI = 1	LI=2
+Walltime = 17.374032497406006 Simulated time = 0.2134706357255946
+# 11 	T = 0.213864	DT = 0.000393738	NI = 1	LI=1
+Walltime = 17.42090892791748 Simulated time = 0.21386437336416453
+# 12 	T = 0.214376	DT = 0.000511859	NI = 1	LI=3
+Walltime = 17.483407974243164 Simulated time = 0.21437623229430544
+# 13 	T = 0.215042	DT = 0.000665417	NI = 1	LI=2
+Walltime = 17.561536073684692 Simulated time = 0.21504164890348862
+# 14 	T = 0.215907	DT = 0.000865042	NI = 1	LI=3
+Walltime = 17.624034881591797 Simulated time = 0.21590669049542674
+# 15 	T = 0.217031	DT = 0.00112455	NI = 1	LI=3
+Walltime = 17.70215630531311 Simulated time = 0.21703124456494632
+# 16 	T = 0.218493	DT = 0.00146192	NI = 1	LI=2
+Walltime = 17.78028416633606 Simulated time = 0.21849316485532178
+# 17 	T = 0.220394	DT = 0.0019005	NI = 1	LI=2
+Walltime = 17.842788219451904 Simulated time = 0.22039366123280985
+# 18 	T = 0.222864	DT = 0.00247065	NI = 2	LI=6
+Walltime = 17.95215606689453 Simulated time = 0.22286430652354436
+# 19 	T = 0.226076	DT = 0.00321184	NI = 2	LI=5
+Walltime = 18.06153106689453 Simulated time = 0.22607614540149923
+# 20 	T = 0.230252	DT = 0.00417539	NI = 2	LI=6
+Walltime = 18.155283212661743 Simulated time = 0.23025153594284054
+# 21 	T = 0.23568	DT = 0.00542801	NI = 3	LI=7
+Walltime = 18.32716393470764 Simulated time = 0.23567954364658425
+# 22 	T = 0.242736	DT = 0.00705641	NI = 2	LI=5
+Walltime = 18.436535835266113 Simulated time = 0.24273595366145106
+# 23 	T = 0.251909	DT = 0.00917333	NI = 3	LI=9
+Walltime = 18.60840892791748 Simulated time = 0.25190928668077794
+# 24 	T = 0.263835	DT = 0.0119253	NI = 3	LI=9
+Walltime = 18.764662504196167 Simulated time = 0.2638346196059029
+# 25 	T = 0.279338	DT = 0.0155029	NI = 3	LI=11
+Walltime = 18.967780590057373 Simulated time = 0.2793375524085653
+# 26 	T = 0.299491	DT = 0.0201538	NI = 3	LI=11
+Walltime = 19.124032258987427 Simulated time = 0.2994913650520264
+# 27 	T = 0.3	DT = 0.000508635	NI = 1	LI=2
+TS = 113(80), NI = 231(1277), LI = 606(3536)
+well_head_depth_pressure =  175.96349999999998
+The string 'wbhp' is found as control!
+Walltime = 0.0 Simulated time = 0.30000000000000004
+Cut timestep to 0.0201538126
+Walltime = 1.306290864944458 Simulated time = 0.30000000000000004
+Cut timestep to 0.0155029328
+Walltime = 2.6286373138427734 Simulated time = 0.30000000000000004
+Stationary point detected!
+Cut timestep to 0.0119253329
+Walltime = 3.034891128540039 Simulated time = 0.30000000000000004
+Stationary point detected!
+Cut timestep to 0.0091733330
+Walltime = 3.378634214401245 Simulated time = 0.30000000000000004
+# 1 	T = 0.309173	DT = 0.00917333	NI = 4	LI=14
+Walltime = 3.7067577838897705 Simulated time = 0.3091733330193269
+Cut timestep to 0.0091733330
+Walltime = 5.097379446029663 Simulated time = 0.3091733330193269
+# 2 	T = 0.318347	DT = 0.00917333	NI = 8	LI=32
+Walltime = 5.472380638122559 Simulated time = 0.3183466660386538
+Stationary point detected!
+Cut timestep to 0.0091733330
+Walltime = 5.7067601680755615 Simulated time = 0.3183466660386538
+# 3 	T = 0.32752	DT = 0.00917333	NI = 3	LI=11
+Walltime = 5.863560438156128 Simulated time = 0.3275199990579807
+# 4 	T = 0.339445	DT = 0.0119253	NI = 2	LI=7
+Walltime = 5.972933530807495 Simulated time = 0.3394453319831056
+# 5 	T = 0.354948	DT = 0.0155029	NI = 2	LI=7
+Walltime = 6.097937345504761 Simulated time = 0.354948264785768
+# 6 	T = 0.375102	DT = 0.0201538	NI = 2	LI=8
+Walltime = 6.222931623458862 Simulated time = 0.37510207742922913
+# 7 	T = 0.4	DT = 0.0248979	NI = 2	LI=8
+TS = 120(86), NI = 254(1353), LI = 693(3831)
+well_head_depth_pressure =  175.96349999999998
+The string 'wbhp' is found as control!
+Walltime = 0.0 Simulated time = 0.4
+# 1 	T = 0.4262	DT = 0.0262	NI = 2	LI=7
+Walltime = 0.1250019073486328 Simulated time = 0.4261999564364995
+# 2 	T = 0.46026	DT = 0.0340599	NI = 2	LI=8
+Walltime = 0.2656283378601074 Simulated time = 0.4602598998039488
+# 3 	T = 0.5	DT = 0.0397401	NI = 2	LI=8
+TS = 123(86), NI = 260(1353), LI = 716(3831)

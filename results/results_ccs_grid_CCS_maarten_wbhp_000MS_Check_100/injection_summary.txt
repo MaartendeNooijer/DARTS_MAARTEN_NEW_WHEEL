@@ -1,0 +1,12 @@
+CASE: grid_CCS_maarten_wbhp
+  Total Injected Mass: 0.000 Mt
+  Total Injected Volume: 0 m³
+  Total Pore Volume: 178,408,233 m³
+  Pore Volume Filled: 0.00%
+
+CASE: grid_CCS_maarten_wbhp
+  Total Injected Mass: 0.000 Mt
+  Total Injected Volume: 0 m³
+  Total Pore Volume: 178,408,233 m³
+  Pore Volume Filled: 0.00%
+

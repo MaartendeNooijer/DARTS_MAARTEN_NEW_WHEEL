@@ -1,0 +1,35 @@
+darts-linear-solvers built on vr 21-02-2025 13:26:34 by SRV554$@SRV554 from 9c7e762-dirty
+darts-engines built on May  9 2025 14:18:48 by SRV554$@SRV554 from a44e934fd1650ca5baf30d1971a73abf3c937318
+darts-discretizer built on May  9 2025 14:18:48 by SRV554$@SRV554 from a44e934fd1650ca5baf30d1971a73abf3c937318
+num_of_elements: 22677
+num_of_cells:    25000
+active_cells:    18038
+number_of_faces: 58351
+bnd_faces_num:   4639
+53712 connections:
+Adjacency matrix:	8	[ms]
+Find TPFA trans:	83	[ms]
+Processing mesh: 18038 reservoir blocks, 32 well blocks, 53774 connections
+Linear solver type is CPU_GMRES_CPR_AMG
+2-phase 2-component non-isothermal flow with kinetic reaction and diffusion CPU engine
+Sim params: 
+	First ts: 	1e-05
+	Max ts: 	10
+	Mult ts: 	1.3
+	Max i newton: 	20
+	Max i linear: 	50
+	Tol newton: 	0.001
+	Tol linear: 	1e-05
+	OpenMP threads: 	6
+
+START SIMULATION
+-------------------------------------------------------------------------------------------------------------
+Well INJ initialized with BHP-control
+	 #1 (8.2037e-10, 1.0465e+05): lin 2 (1.2e-12)
+Composition correction applied in 15 block(s)
+	 #2 (1.0649e-09, 1.0014e+04): lin 2 (3.6e-13)
+OBL axis correction: block 18069 variable 2 shoots under axis limit of 273.15 to 196.408
+OBL axis correction applied 1 time(s) 
+	 #3 (1.4912e-10, 1.4070e+04): lin 2 (2.4e-12)
+Composition correction applied in 1 block(s)
+	 #4 (5.8945e-12, 1.1303e+03): lin 2 (4.4e-11)
