@@ -1,3 +1,0 @@
-reading wells (COMPDAT) from meshes\fault=FM1_cut=CO1_grid=G1_top=TS1_mod=OBJ_mult=1\sch.inc
-WELLS read from SCH file: 1
-No PERMZ found in input files. PERMZ=PERMX/10 will be used

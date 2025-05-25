@@ -1,6 +1,0 @@
-CASE: grid_CCS_maarten_wbhp
-  Total Injected Mass: 2000.324 Mt
-  Total Injected Volume: 2,273,095,326 m³
-  Total Pore Volume: 178,408,233 m³
-  Pore Volume Filled: 1274.10%
-

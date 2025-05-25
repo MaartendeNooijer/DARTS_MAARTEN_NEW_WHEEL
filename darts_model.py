@@ -751,6 +751,8 @@ class DartsModel:
 
         return time, cell_id, X, var_names
 
+
+
     def output_properties(self, output_properties: list = None, timestep: int = None) -> tuple:  # NEW
         """
         Function to read *.h5 data and evaluate properties per grid block, per timestep
@@ -820,7 +822,7 @@ class DartsModel:
 
         return timesteps, property_array
 
-    #
+
     # def output_properties(self, output_properties: list = None, timestep: int = None) -> tuple:
     #     """
     #     Function to read *.h5 data and evaluate properties per grid block, per timestep.

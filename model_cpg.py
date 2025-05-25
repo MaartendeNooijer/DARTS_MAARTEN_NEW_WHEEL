@@ -1,17 +1,17 @@
-#from darts.reservoirs.cpg_reservoir import CPG_Reservoir, save_array, read_arrays, check_arrays, make_burden_layers, make_full_cube
+import numpy as np
+import os
 
 from cpg_reservoir import CPG_Reservoir, save_array, read_arrays, check_arrays, make_burden_layers, make_full_cube
-
 from darts.discretizer import load_single_float_keyword
 from darts.engines import value_vector
 
 from darts.tools.gen_cpg_grid import gen_cpg_grid
 
 from darts.models.cicd_model import CICDModel
-#from cicd_model import CICDModel
-from darts.engines import value_vector, index_vector
 
-import numpy as np
+# from cicd_model import CICDModel
+
+from darts.engines import value_vector, index_vector
 
 
 def fmt(x):
@@ -44,7 +44,7 @@ class Model_CPG(CICDModel):
             # read grid and rock properties
             arrays = read_arrays(self.idata.gridfile, self.idata.propfile)
             check_arrays(arrays)
-            # Replace zero porosity values with a small number to avoid inactive cells and numerical issues
+
             poro_array = arrays.get('PORO')
             if poro_array is not None:
                 poro_array[poro_array <= 0] = self.idata.geom.min_poro
@@ -58,7 +58,8 @@ class Model_CPG(CICDModel):
                                burden_layer_prop_value=self.idata.rock.burden_prop)
 
         self.reservoir = CustomCPGReservoir(self.timer, arrays, faultfile=self.idata.faultfile,
-                                            minpv=self.idata.geom.minpv)  # NEW #was self.reservoir = CPG_Reservoir(self.timer, arrays, minpv=self.idata.geom.minpv)
+                                            minpv=self.idata.geom.minpv, )
+
         self.reservoir.discretize()
 
         # helps reading in satnum values from the properties file and store it as op_num
@@ -113,7 +114,6 @@ class Model_CPG(CICDModel):
         self.reservoir.global_data.update({'heat_capacity': make_full_cube(self.reservoir.hcap.copy(), l2g, g2l),
                                            'rock_conduction': make_full_cube(self.reservoir.conduction.copy(), l2g,
                                                                              g2l)})
-        # 'rock_conduction': make_full_cube(self.reservoir.conduction, l2g, g2l) })
 
         self.set_physics()
 
@@ -126,50 +126,9 @@ class Model_CPG(CICDModel):
 
         self.timer.node["initialization"].stop()
         self.init_tracked_cells()
-        # self.check_conductivity()
 
     def init_tracked_cells(self):
 
-        # Define grid cells you want to monitor (1-based IJK)
-        # self.ijk_to_track = [ ] #[(92, 112, 38)] # test injector 92, 94 (midden grid) #gilles cells for tracking with prd = 55, 67 & inj 132, 92 => [(131, 77, 39), (131, 76, 34), (42, 53, 31), (42, 52, 38)]
-        # self.ijk_to_track = [
-        #             # FM1 TS1
-        #             (75, 108, 17), (75, 108, 39), (75, 108, 62),
-        #
-        #             (75, 109, 2), (75, 109, 24), (75, 109, 47),
-        #
-        #             # FM1 TS2
-        #             (75, 108, 16), (75, 108, 41), (75, 108, 66),
-        #             (75, 109, 3), (75, 109, 28), (75, 109, 53),
-        #
-        #             # FM1 TS3
-        #             (75, 108, 17), (75, 108, 37), (75, 108, 56),
-        #             (75, 109, 2), (75, 109, 22), (75, 109, 41),
-        #
-        #             # FM2 TS1
-        #             (75, 108, 17), (75, 108, 39), (75, 108, 62),
-        #             (75, 109, 2), (75, 109, 24), (75, 109, 47),
-        #
-        #             # FM2 TS2
-        #             (75, 108, 17), (75, 108, 39), (75, 108, 62),
-        #             (75, 109, 2), (75, 109, 24), (75, 109, 47),
-        #
-        #             # FM2 TS3
-        #             (75, 108, 17), (75, 108, 36), (75, 108, 56),
-        #             (75, 109, 2), (75, 109, 21), (75, 109, 41),
-        #
-        #             # FM3 TS1
-        #             (75, 108, 5), (75, 108, 33), (75, 108, 64),
-        #             (75, 109, 2), (75, 109, 30), (75, 109, 61),
-        #
-        #             # FM3 TS2
-        #             (75, 108, 5), (75, 108, 32), (75, 108, 60),
-        #             (75, 108, 5), (75, 109, 29), (75, 109, 57),
-        #
-        #             # FM3 TS3
-        #             (75, 108, 5), (75, 108, 32), (75, 108, 56),
-        #             (75, 108, 5), (75, 109, 29), (75, 109, 53),
-        #         ]
         self.ijk_to_track = []
 
         self.tracked_cells = []
@@ -189,9 +148,12 @@ class Model_CPG(CICDModel):
         }
         self.my_average_pressure = []
 
+        self.initial_pressure = None
+        self.max_pressure_threshold = None
+        self.max_fracture_threshold = None
+
     def set_wells(self):
         # read perforation data from a file
-        self.well_cells = []  # NEW for RHS function
         if hasattr(self.idata, 'schfile'):
             # apply to the reservoir; add wells and perforations, 1-based indices
             for wname, wdata in self.idata.well_data.wells.items():
@@ -200,13 +162,10 @@ class Model_CPG(CICDModel):
                     perf = perf_tuple[1]
                     # adjust to account for added overburden layers
                     perf_ijk_new = (perf.loc_ijk[0], perf.loc_ijk[1], perf.loc_ijk[2] + self.idata.geom.burden_layers)
-                    self.well_cells.append(perf_ijk_new)  # NEW, for RHS function
                     self.reservoir.add_perforation(wname,
                                                    cell_index=perf_ijk_new,
-                                                   # well_index=perf.well_index, well_indexD=perf.well_indexD, #Original
-                                                   well_index=perf.well_index, well_indexD=0, #NEW
+                                                   well_index=perf.well_index, well_indexD=0, skin=0,
                                                    multi_segment=True, verbose=True)
-                    #    multi_segment=True, verbose=True)
         else:
             # add wells and perforations, 1-based indices
             for wname, wdata in self.idata.well_data.wells.items():
@@ -233,120 +192,154 @@ class Model_CPG(CICDModel):
         return "INJ" in wname
 
     def do_after_step(self):
-        # save to grdecl file after each time step
-        # self.reservoir.save_grdecl(self.get_arrays_gredcl(ith_step), os.path.join(out_dir, 'res_' + str(ith_step+1)))
         self.physics.engine.report()
 
-        #print("[Tracker] Entered do_after_step, time =", self.physics.engine.time_data['time'][-1])
-        total_pressure = self.physics.engine.X[::3]
-        average_pressure = np.mean(total_pressure)
+        # Dimensions
+        nx, ny, nz = map(int, self.reservoir.dims)
 
+        # --- Extract active cell pressure values ---
+        l2g = np.array(self.reservoir.discr_mesh.local_to_global, copy=False)
+        active_mask = l2g >= 0
+        active_l2g = l2g[active_mask]
+
+        pressure = np.array(self.physics.engine.X[::self.physics.n_vars], copy=False)
+        pressure_active = pressure[:active_mask.sum()]
+
+        average_pressure = np.mean(pressure_active)
         self.my_tracked_pressures.setdefault("P_MEAN_Reservoir", []).append(average_pressure)
 
-        pressure = total_pressure  # self.physics.engine.X[self.physics.vars.index('P')]
-        nx, ny, nz = map(int, self.reservoir.dims)
-        # Gather ΔP across all faults
+        # --- Initialize pressure threshold on first step ---
+        if self.initial_pressure is None:
+            self.initial_pressure = pressure_active.copy()
+            self.max_pressure_threshold = self.initial_pressure + 0.5  # 0.5 bar threshold
+
+        if self.max_fracture_threshold is None:
+            depth = np.array(self.reservoir.mesh.depth, copy=False)
+            depth_active = depth[:active_mask.sum()]  # ✅ same shape as pressure_active
+            self.max_fracture_threshold = depth_active * 139 / 1000 + 1
+
+        fracture_exceed_mask = pressure_active > self.max_fracture_threshold
+        # --- Manually exclude all cells where I=90 and J=95 (0-based: i=89, j=94) ---
+        for idx, g in enumerate(active_l2g):
+            k = g // (nx * ny)
+            j = (g % (nx * ny)) // nx
+            i = g % nx
+            if i == 14 and j == 14:
+                fracture_exceed_mask[idx] = False
+
+        # --- Exceedance ---
+        exceed_mask = pressure_active > self.max_pressure_threshold
+        exceed_count = int(np.sum(exceed_mask))
+        self.my_tracked_pressures.setdefault("PRESSURE_EXCEED_COUNT", []).append(exceed_count)
+
+        # Debug: print exceeding cell indices (I, J, K)
+        gidx_exceed = active_l2g[exceed_mask]
+        if exceed_count > 0:
+            # print(f"[Exceedance] {exceed_count} cells exceed threshold")
+            for g in gidx_exceed:
+                k = g // (nx * ny)
+                j = (g % (nx * ny)) // nx
+                i = g % nx
+                # print(f"  - I={i + 1}, J={j + 1}, K={k + 1}")  # 1-based indexing
+
+        # --- Pressure plume area (km²) and unique (I,J) count ---
+        ij_exceed = {(g % nx, (g // nx) % ny) for g in gidx_exceed}
+        unique_ij_count = len(ij_exceed)
+        dx = 25
+        area_km2 = unique_ij_count * dx * dx / 1e6
+        self.my_tracked_pressures.setdefault("PRESSURE_PLUME_AREA_KM2", []).append(area_km2)
+        self.my_tracked_pressures.setdefault("PRESSURE_EXCEED_SURFACE_CELLS", []).append(unique_ij_count)
+        # print(f"[Exceedance] Unique (I, J) surface cells exceeding threshold: {unique_ij_count}")
+
+        # --- Additional: Fracture pressure exceedance analysis ---
+
+        # Apply fracture threshold only to active cells
+        fracture_exceed_count = int(np.sum(fracture_exceed_mask))
+
+        self.my_tracked_pressures.setdefault("FRACTURE_EXCEED_COUNT", []).append(fracture_exceed_count)
+
+        # Surface coverage (I, J) for fracture exceedance
+        gidx_fracture_exceed = active_l2g[fracture_exceed_mask]
+        ij_fracture_exceed = {(g % nx, (g // nx) % ny) for g in gidx_fracture_exceed}
+        fracture_ij_count = len(ij_fracture_exceed)
+        fracture_area_km2 = fracture_ij_count * dx * dx / 1e6
+
+        self.my_tracked_pressures.setdefault("FRACTURE_EXCEED_SURFACE_CELLS", []).append(fracture_ij_count)
+        self.my_tracked_pressures.setdefault("FRACTURE_PLUME_AREA_KM2", []).append(fracture_area_km2)
+
+        # if fracture_exceed_count > 0:
+        # print(f"[Fracture] {fracture_exceed_count} cells exceed fracture threshold")
+        # print(f"[Fracture] Unique (I, J) surface cells: {fracture_ij_count}")
+
+        # --- Additional: dP stats for cells exceeding +0.5 bar threshold ---
+        if self.initial_pressure is not None:
+            dp_exceed = pressure_active[exceed_mask] - self.initial_pressure[exceed_mask]
+            if dp_exceed.size > 0:
+                avg_dp_exceed = float(np.mean(dp_exceed))
+                var_dp_exceed = float(np.var(dp_exceed))
+            else:
+                avg_dp_exceed = 0.0
+                var_dp_exceed = 0.0
+        else:
+            avg_dp_exceed = 0.0
+            var_dp_exceed = 0.0
+
+        self.my_tracked_pressures.setdefault("DP_EXCEED_MEAN", []).append(avg_dp_exceed)
+        self.my_tracked_pressures.setdefault("DP_EXCEED_VAR", []).append(var_dp_exceed)
+
+        # --- Fault ΔP analysis ---
         from collections import defaultdict
-
-        # Fault-wise grouping
         fault_deltas = defaultdict(list)
-
         for (i1, j1, k1), (i2, j2, k2) in self.reservoir.fault_connections_ijk:
             idx1 = i1 + nx * j1 + nx * ny * k1
             idx2 = i2 + nx * j2 + nx * ny * k2
-
             idx1_local = self.reservoir.discr_mesh.global_to_local[idx1]
             idx2_local = self.reservoir.discr_mesh.global_to_local[idx2]
 
-            delta = abs(pressure[idx1_local] - pressure[idx2_local])  # NEW
-
-            # delta = abs(pressure[idx1] - pressure[idx2]) #Original
+            delta = abs(pressure[idx1_local] - pressure[idx2_local])
             fault_name = self.reservoir.fault_connection_to_name.get(((i1, j1, k1), (i2, j2, k2)), "UNNAMED")
             fault_deltas[fault_name].append(delta)
 
-        # Mean ΔP across all faults
         all_deltas = [dp for deltas in fault_deltas.values() for dp in deltas]
-        avg_dp_all = np.mean(all_deltas)
-        self.my_tracked_pressures.setdefault("DP_FAULT_MEAN", []).append(avg_dp_all)
-
-        # Per-fault ΔP
-        for fault_name, deltas in fault_deltas.items():
-            key = f"DP_FAULT_{fault_name}"
-            self.my_tracked_pressures.setdefault(key, []).append(np.mean(deltas))
-
-        # 1. Max ΔP across all faults
+        filtered_deltas = []
         if all_deltas:
-            max_dp_all = np.max(all_deltas)
+            max_physical_dp = 10.0  # bar, adjust to model reality
+            p1, p99 = np.percentile(all_deltas, [1, 99])
+            filtered_deltas = [dp for dp in all_deltas if p1 <= dp <= p99 and dp <= max_physical_dp]
+            var_dp = np.var(filtered_deltas) if filtered_deltas else 0.0
         else:
-            max_dp_all = 0.0
-        self.my_tracked_pressures.setdefault("DP_FAULT_MAX", []).append(max_dp_all)
+            var_dp = 0.0
 
-        # 2. Per-fault max ΔP
+        self.my_tracked_pressures.setdefault("DP_FAULT_VAR", []).append(var_dp)
+        self.my_tracked_pressures.setdefault("DP_FAULT_MAX", []).append(
+            np.max(filtered_deltas) if filtered_deltas else 0.0)
+
         for fault_name, deltas in fault_deltas.items():
-            if deltas:
-                max_dp = np.max(deltas)
-            else:
-                max_dp = 0.0
-            key = f"DP_FAULT_{fault_name}_MAX"
-            self.my_tracked_pressures.setdefault(key, []).append(max_dp)
+            self.my_tracked_pressures.setdefault(f"DP_FAULT_{fault_name}", []).append(
+                np.mean(deltas) if deltas else 0.0)
+            self.my_tracked_pressures.setdefault(f"DP_FAULT_{fault_name}_MAX", []).append(
+                np.max(deltas) if deltas else 0.0)
 
+        # --- Tracked cell logging ---
         for (i, j, k, local_idx) in self.tracked_cells:
             key_p = f'P_I{i}_J{j}_K{k}'
             key_t = f'T_I{i}_J{j}_K{k}'
-
             state_idx = local_idx * self.physics.n_vars
             try:
                 p = self.physics.engine.X[state_idx]
                 T = self.physics.engine.X[state_idx + 2]
-
-                print(f"[Tracker] {key_p} = {p:.2f} bar, {key_t} = {T:.2f} K")
-
                 self.my_tracked_pressures.setdefault(key_p, []).append(p)
                 self.my_tracked_pressures.setdefault(key_t, []).append(T)
-
             except Exception as e:
                 print(f"[Tracker Error] {key_p}/{key_t}: {e}")
 
-        # self.print_well_rate()
-
-    def check_conductivity(self):
-        """
-        Verifies the conductivity values assigned based on SATNUM.
-        Ensures that shale and sandstone have the correct properties.
-        """
-        # Get SATNUM values again for active cells
-        satnum_full = np.array(self.reservoir.satnum)  # Full-grid SATNUM
-        global_to_local = np.array(self.reservoir.discr_mesh.global_to_local, copy=False)
-
-        # Use only active cells
-        satnum_active = satnum_full[global_to_local >= 0]
-
-        # Get conductivity values
-        conduction_values = np.array(self.reservoir.conduction, copy=False)  # Active-cell conductivity
-
-        # Expected values
-        expected_shale = self.idata.rock.conduction_shale
-        expected_sandstone = self.idata.rock.conduction_sand
-
-        # Count occurrences
-        unique_vals, counts = np.unique(conduction_values, return_counts=True)
-        shale_count = np.sum(conduction_values == expected_shale)
-        sandstone_count = np.sum(conduction_values == expected_sandstone)
-
-        # Print results
-        print(f"\n **Conductivity Check Report** ")
-        print(f"Unique conductivity values in the reservoir: {dict(zip(unique_vals, counts))}")
-        print(f"Shale assignments (SATNUM=3): {shale_count} cells → Expected: {expected_shale} kJ/m/day/K")
-        print(
-            f"Sandstone assignments (SATNUM=1 or 2): {sandstone_count} cells → Expected: {expected_sandstone} kJ/m/day/K")
-
-        # Debugging: Check if any unexpected values exist
-        unexpected_conductivity = [val for val in unique_vals if val not in [expected_shale, expected_sandstone]]
-        if unexpected_conductivity:
-            print(
-                f"Warning: Found unexpected conductivity values: {unexpected_conductivity}. Check SATNUM processing!")
-
-        print("Conductivity verification complete!\n")
+    def output_properties(self, output_properties, timestep):
+        # overload to add additional arrays (geomechanical proxy results) to vtk output
+        output_properties_2 = ['pressure'] + output_properties
+        tsteps, props = super().output_properties(output_properties=output_properties_2, timestep=timestep)
+        if hasattr(self, 'out'):
+            props.update(self.out)
+        return tsteps, props
 
 
 class CustomCPGReservoir(CPG_Reservoir):
@@ -439,5 +432,4 @@ class CustomCPGReservoir(CPG_Reservoir):
                         skipped += 1
 
         print(f"[FaultMult] Done. Applied: {applied}, Skipped: {skipped}")
-
 

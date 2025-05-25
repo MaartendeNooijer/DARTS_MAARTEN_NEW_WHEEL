@@ -68,12 +68,20 @@ class ModelCCS(Model_CPG):
         # Code used in SPE11b
         """Physical properties"""
         # Fluid components, ions and solid
-        components = ["H2O", "CO2"]
+        self.components = ["CO2", "H2O"]
         phases = ["V", "Aq"]
-        comp_data = CompData(components, setprops=True)
+        comp_data = CompData(self.components, setprops=True)
+
+        temperature = None  # if None, then thermal=True
 
         # nc = len(components)
-        state_spec = Compositional.StateSpecification.PT
+        if temperature is None:  # if None, then thermal=True
+            thermal = True
+            state_spec = Compositional.StateSpecification.PT
+        else:
+            thermal = False
+            state_spec = Compositional.StateSpecification.P
+
         flash_params = FlashParams(comp_data)
 
         # EoS-related parameters
@@ -89,7 +97,7 @@ class ModelCCS(Model_CPG):
 
         # Initialize physics model
         self.physics = Compositional(
-            components=components,
+            components=self.components,
             phases=phases,
             timer=self.timer,
             n_points=self.idata.obl.n_points,
@@ -103,40 +111,38 @@ class ModelCCS(Model_CPG):
             cache=self.idata.obl.cache
         )
 
-        self.physics.n_axes_points[0] = 101  # sets OBL points for pressure, From SPE11b
-
-        temperature = None  # if None, then thermal=True
+        self.physics.n_axes_points[0] = 1001  # sets OBL points for pressure, From SPE11b
 
         facies_rel_perm = {  # based on fluidflower paper
             # # **Wells** ##NEW, values don't mind
-            # 0: Corey(nw=1.5, ng=1.5, swc=0.10, sgc=0.10, krwe=1.0, krge=1.0, labda=2., p_entry=0, pcmax=0.1, c2=1.5),
-            # **Channel Sand (Facies 1)**
-            0: Corey(nw=1.5, ng=1.5, swc=0.10, sgc=0.10, krwe=1.0, krge=1.0, labda=2., p_entry=0.025602, pcmax=300,
+            # 0: Corey(nw=1.5, ng=1.5, swc=0.10, sgc=0.10, krwe=1.0, krge=1.0, labda=2., p_entry=0.025602, pcmax=300, c2=1.5),  #p_entry=0.025602
+            0: Corey(nw=4.0, ng=2.0, swc=0.2, sgc=0.3, krwe=1.0, krge=1.0, labda=2., p_entry=0.025602, pcmax=300,
                      c2=1.5),  # p_entry=0.025602
             # **Overbank Sand (Facies 2)**
-            1: Corey(nw=1.5, ng=1.5, swc=0.12, sgc=0.10, krwe=1.0, krge=1.0, labda=2., p_entry=0.038706, pcmax=300,
+            1: Corey(nw=3.0, ng=1.5, swc=0.2, sgc=0.2, krwe=1.0, krge=1.0, labda=2., p_entry=0.038706, pcmax=300,
                      c2=1.5),  # p_entry=0.038706
             # **Shale (Facies 3)**
-            2: Corey(nw=1.5, ng=1.5, swc=0.32, sgc=0.10, krwe=1.0, krge=1.0, labda=2., p_entry=1.935314, pcmax=300,
+            2: Corey(nw=1.5, ng=1.5, swc=0.32, sgc=0.1, krwe=1.0, krge=1.0, labda=2., p_entry=1.935314, pcmax=300,
                      c2=1.5)}  # p_entry=1.935314
 
         # Assign properties per facies using `add_property_region`
         for i, (region, corey_params) in enumerate(facies_rel_perm.items()):  # NEW
-            i = i  # + 1 #to create correct regions
+
             # Original
             # property_container = AlternativeContainer(phases_name=phases, components_name=components,Mw=comp_data.Mw[:2], #NEW, was property_container = PropertyContainer(phases_name=phases, components_name=components,Mw=comp_data.Mw,
             #                                        temperature=temperature, min_z=self.zero/10)
 
-            property_container = PropertyContainer(phases_name=phases, components_name=components, Mw=comp_data.Mw[:2],
+            property_container = PropertyContainer(phases_name=phases, components_name=self.components,
+                                                   Mw=comp_data.Mw[:2],
                                                    temperature=temperature, min_z=self.zero / 10)
 
             property_container.flash_ev = NegativeFlash(flash_params, ["PR", "AQ"], [InitialGuess.Henry_VA])
 
             property_container.density_ev = dict([('V', EoSDensity(eos=pr, Mw=comp_data.Mw[:2])),
-                                                  ('Aq', Garcia2001(components)), ])
+                                                  ('Aq', Garcia2001(self.components)), ])
 
             property_container.viscosity_ev = dict([('V', Fenghour1998()),
-                                                    ('Aq', Islam2012(components)), ])
+                                                    ('Aq', Islam2012(self.components)), ])
 
             property_container.enthalpy_ev = dict([('V', EoSEnthalpy(eos=pr)), ('Aq', EoSEnthalpy(eos=aq)), ])
 
@@ -150,14 +156,15 @@ class ModelCCS(Model_CPG):
             self.physics.add_property_region(property_container, i)  # interesting
 
             property_container.output_props = {"satV": lambda ii=i: self.physics.property_containers[ii].sat[0],
-                                               "satA": lambda ii=i: self.physics.property_containers[ii].sat[1],
-                                               "xCO2": lambda ii=i: self.physics.property_containers[ii].x[1, 1],
-                                               "yCO2": lambda ii=i: self.physics.property_containers[ii].x[0, 1], }
+                                               "satA": lambda ii=i: self.physics.property_containers[ii].sat[1], }
 
-            # "xH20": lambda ii=i: self.physics.property_containers[ii].x[1, 0],
-            # "yH20": lambda ii=i: self.physics.property_containers[ii].x[0, 0],
-            # "Pc": lambda ii=i: self.physics.property_containers[ii].pc[1]}
-            # "enthV": lambda ii=i: self.physics.property_containers[ii].enthalpy[0], #was 0
+            def make_x_accessor(ii, jj, cc):
+                return lambda: self.physics.property_containers[ii].x[jj, cc]
+
+            for j, phase_name in enumerate(phases):
+                for c, component_name in enumerate(self.components):
+                    key = f"x{component_name}" if phase_name == 'Aq' else f"y{component_name}"
+                    property_container.output_props[key] = make_x_accessor(i, j, c)
 
         return
 
@@ -233,10 +240,11 @@ class ModelCCS(Model_CPG):
         self.temperature_initial_ = 273.15 + 76.85  # K
         self.initial_values = {"pressure": 100.,
                                "H2O": 0.99995,
+                               "CO2": 0.00005,
                                "temperature": self.temperature_initial_
                                }
 
-        pressure_grad = 100
+        pressure_grad = 97.75
         temperature_grad = 30
         input_depth = [np.amin(self.reservoir.mesh.depth), np.amax(self.reservoir.mesh.depth)]
 
@@ -246,12 +254,11 @@ class ModelCCS(Model_CPG):
                 1 + input_depth[1] * pressure_grad / 1000
             ],
             'H2O': [
-                0.99995
+                0.99995, 0.99995
             ],
-            # 'temperature': [
-            #     273.15 + 76.85
-            # ]
-
+            'CO2': [
+                0.00005, 0.00005
+            ],
             'temperature': [
                 20 + 273.15 + input_depth[0] * temperature_grad / 1000,
                 20 + 273.15 + input_depth[1] * temperature_grad / 1000
@@ -271,13 +278,13 @@ class ModelCCS(Model_CPG):
         wdata = self.idata.well_data
         wells = wdata.wells  # short name
 
-        i, j, k = 15, 15, 1 #90, 95, 1 #15, 15, 1 #90, 95, 1  # do this manually - not nice but easy
+        i, j, k = 15, 15, 1 #90, 95, 1  # do this manually - not nice but easy
         nx, ny, nz = int(self.reservoir.dims[0]), int(self.reservoir.dims[1]), int(self.reservoir.dims[2])
 
         res_block_local = (i - 1) + nx * (j - 1) + nx * ny * (k - 1)
         well_head_depth = self.reservoir.depth[res_block_local]
-        pressure_gradient = 100  # bar / km
-        well_head_depth_inj_pressure = 1 + well_head_depth * pressure_gradient / 1000 + 8  # dP of 5 bar
+        pressure_gradient = 97.75  # bar / km
+        well_head_depth_inj_pressure = 1 + well_head_depth * pressure_gradient / 1000 + 10  # dP of 5 bar
         print('well_head_depth_pressure = ', well_head_depth_inj_pressure)
         # well_head_depth_inj_pressure = 160
         mt = 1e9  # kg
@@ -294,11 +301,12 @@ class ModelCCS(Model_CPG):
             print("The string 'rate' is found as control!")
             for w in wells:
                 control_type = well_control_iface.WellControlType.MOLAR_RATE  # kmol/day
-                wdata.add_inj_rate_control(name=w, rate=inj_rate, rate_type = control_type, bhp_constraint=250, temperature=300,
+                wdata.add_inj_rate_control(name=w, rate=inj_rate, rate_type=control_type, bhp_constraint=250,
+                                           temperature=300,
                                            phase_name='V')  # rate=5e5/8 is approximately 1 Mt per year #was rate = 6e6 # kmol/day | bars | K
                 type = 'rate'
 
-        inj_stream_base = [self.zero * 100]
+        inj_stream_base = [1 - self.zero * 100, self.zero * 100]
         eps_time = 1e-15
         for w in self.reservoir.wells:
             wctrl = None
@@ -314,7 +322,7 @@ class ModelCCS(Model_CPG):
                 if type == 'rate':  # rate control
                     control_type = well_control_iface.WellControlType.MOLAR_RATE  # kmol/day
                     control_type_constraint = well_control_iface.WellControlType.NONE
-                    w.set_rate_control(True, control_type, 0, inj_rate, inj_stream, 300)
+                    w.set_rate_control(True, control_type, 0, inj_rate, inj_stream, 300)  # 0 is phase_index
                     w.set_rate_constraint(True, control_type_constraint, 0, inj_rate, inj_stream, 300)
 
                 elif type == 'bhp':  # BHP control
@@ -391,7 +399,7 @@ class CapillaryPressure:
         '''
         if self.nph > 1:
             Se = (sat[1] - self.swc) / (
-                        1 - self.swc)  # Here SAT[1], since first V, then AQ (propertycontainer) #Was Sat[0] for other script, but most likely should be sat[1] here
+                    1 - self.swc)  # Here SAT[1], since first V, then AQ (propertycontainer) #Was Sat[0] for other script, but most likely should be sat[1] here
             if Se < self.eps:
                 Se = self.eps
             pc = self.p_entry * Se ** (-1 / self.labda)
